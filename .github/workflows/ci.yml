@@ -22,6 +22,8 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: "20"
+      - name: Install ffprobe for the video lengths in the site data
+        run: sudo apt-get update -q && sudo apt-get install -y -q ffmpeg
       - name: Preflight without the network
         run: python scripts/preflight.py --offline
       - name: The practice case is reproducible
