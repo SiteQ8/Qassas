@@ -1,0 +1,936 @@
+[
+ {
+  "id": "kw-law-63-2015",
+  "country": "KW",
+  "year": 2015,
+  "type": "law",
+  "title": {
+   "en": "Law No. 63 of 2015 on Combating Information Technology Crimes",
+   "ar": "القانون رقم 63 لسنة 2015 في شأن مكافحة جرائم تقنية المعلومات"
+  },
+  "summary": {
+   "en": "Kuwait's main cybercrime law. It defines terms such as electronic data, electronic document or record and illegal access, and criminalises unauthorised access, data damage, electronic forgery, interception, online fraud, threats, blackmail and misuse of card data. Examiners need it because the offence charged and its aggravating factors decide what the digital evidence has to prove.",
+   "ar": "هو قانون الجرائم الإلكترونية الأساسي في الكويت إذ يعرّف البيانات والمستند الإلكتروني والدخول غير المشروع ويجرّم الدخول دون إذن وإتلاف البيانات والتزوير الإلكتروني والتنصت والاحتيال والتهديد والابتزاز وإساءة استخدام بيانات البطاقات لذلك يحدد التهمة وظروفها المشددة ما يجب أن يثبته الدليل الرقمي."
+  },
+  "notes_en": [
+   "Article 2 punishes illegal access to a computer, system or network, with higher penalties if data is deleted, altered or disclosed, higher again if the data is personal, and highest if the offender committed or facilitated it during or because of their job.",
+   "Article 3 covers access to confidential government data and to bank customer account data, forgery or destruction of electronic documents and signatures, tampering with electronic medical records, threats, blackmail and online fraud.",
+   "Article 13 lets the court confiscate the devices, software and tools used and the proceeds, and close the shop or website involved.",
+   "Article 15 lets employees named by the competent minister detect offences, write them up and refer them to the Public Prosecution, and Article 17 gives the Public Prosecution sole power to investigate and prosecute these crimes.",
+   "Article 18 sets a limitation period of two years where the penalty is up to three years and five years where it is longer, counted from the day of the offence.",
+   "Its explanatory memorandum ties the law to the Arab Convention on Combating Information Technology Offences, which Kuwait ratified by Law No. 60 of 2013."
+  ],
+  "caveat_en": "Issued 7 July 2015. Article 21 brought it into force six months after publication in the Official Gazette. The law has 21 articles and no procedural chapter on preserving, producing or searching data, so see the Code of Criminal Procedures and Trials entry for search and seizure. Articles 6 and 7 set penalties by reference to the Press and Publications Law No. 3 of 2006; Kuwait Times reports that Decree-Law No. 102 of 2026 replaces that law and Electronic Media Law No. 8 of 2016 from April 2027, so check those cross references. Law No. 8 of 2016 has no separate entry because no evidence specific provisions were found.",
+  "source": {
+   "url": "https://www.moj.gov.kw/AR/Documents/MojDocs/%D9%82%D8%A7%D9%86%D9%88%D9%86%20%D8%B1%D9%82%D9%85%2063%20%D9%84%D8%B3%D9%86%D8%A9%202015%20%D8%A8%D8%A5%D8%B5%D8%AF%D8%A7%D8%B1%20%D9%82%D8%A7%D9%86%D9%88%D9%86%20%D9%85%D9%83%D8%A7%D9%81%D8%AD%D8%A9%20%D8%AC%D8%B1%D8%A7%D8%A6%D9%85%20%D8%AA%D9%82%D9%86%D9%8A%D8%A9%20%D8%A7%D9%84%D9%85%D8%B9%D9%84%D9%88%D9%85%D8%A7%D8%AA.pdf",
+   "name": "Ministry of Justice, Kuwait (official Arabic text with explanatory memorandum)"
+  },
+  "verified": true
+ },
+ {
+  "id": "kw-law-20-2014",
+  "country": "KW",
+  "year": 2014,
+  "type": "law",
+  "title": {
+   "en": "Law No. 20 of 2014 on Electronic Transactions",
+   "ar": "القانون رقم 20 لسنة 2014 في شأن المعاملات الإلكترونية"
+  },
+  "summary": {
+   "en": "Gives electronic records, documents, messages and signatures the same legal effect and force as proof as paper in civil, commercial and administrative transactions. It lists the conditions an electronic record must meet to count, which maps directly onto how an examiner preserves, hashes and documents a record.",
+   "ar": "يمنح السجلات والمستندات والرسائل والتوقيعات الإلكترونية الأثر القانوني وحجية الإثبات ذاتها للورق في المعاملات المدنية والتجارية والإدارية ويضع شروطاً للسجل الإلكتروني تتطابق مع طريقة الفاحص في حفظ السجل وحساب بصمته وتوثيقه."
+  },
+  "notes_en": [
+   "Article 3 gives electronic records, documents, messages, transactions and signatures the same legal effect and force as proof as written ones in civil, commercial and administrative transactions.",
+   "Article 9 requires an effective electronic record to be kept as it was created, sent or received, or in a way that proves its data was accurate, to be retrievable at any time, to identify the creator or sender and the date and time, and to follow the format rules of the competent authority.",
+   "Article 6 makes a hard copy of an official electronic record evidence against everyone, and of an unofficial one evidence against its signer, to the extent it matches the original. Article 7 applies the civil and commercial Evidence Law where this law is silent.",
+   "Article 17 makes a time stamp added by an authentication service provider to a signed electronic record evidence of the date and time it was created, sent and received.",
+   "Article 32 bars government bodies, companies and their staff from unlawfully accessing or disclosing personal data in their electronic records without the person's consent or a reasoned judicial order."
+  ],
+  "caveat_en": "Issued 11 February 2014 and effective on publication in the Official Gazette (Article 46). Article 2 limits it to civil, commercial and administrative transactions. Decree-Law No. 148 of 2025, published in the Official Gazette on 23 October 2025 and effective that day, amended the law and, according to a GLA & Company briefing on Legal 500, widened recognition to personal status matters. This translation predates that amendment, so check the current Arabic text.",
+  "source": {
+   "url": "https://kdipa.gov.kw/wp-content/uploads/2022/08/%D9%82%D8%A7%D9%86%D9%88%D9%86-%D8%A7%D9%84%D9%85%D8%B9%D8%A7%D9%85%D9%84%D8%A7%D8%AA-%D8%A7%D9%84%D8%A7%D9%84%D9%83%D8%AA%D8%B1%D9%88%D9%86%D9%8A%D8%A9-20-%D9%84%D8%B3%D9%86%D8%A9-2014-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D8%A8%D8%A7%D9%84%D9%84%D8%BA%D8%A9-%D8%A7%D9%84%D8%A7%D9%86%D8%AC%D9%84%D9%8A%D8%B2%D9%8A%D8%A9.pdf",
+   "name": "Kuwait Direct Investment Promotion Authority (English translation)"
+  },
+  "verified": true
+ },
+ {
+  "id": "kw-law-37-2014",
+  "country": "KW",
+  "year": 2014,
+  "type": "law",
+  "title": {
+   "en": "Law No. 37 of 2014 on the Establishment of the Communication and Information Technology Regulatory Authority (CITRA)",
+   "ar": "القانون رقم 37 لسنة 2014 بإنشاء هيئة تنظيم الاتصالات وتقنية المعلومات"
+  },
+  "summary": {
+   "en": "Creates CITRA as the telecom and ICT regulator and sets rules on the confidentiality of communications, bugging devices, inspection powers and telecom offences. Examiners meet it when evidence comes from operators, subscriber records or intercepted communications.",
+   "ar": "ينشئ هيئة الاتصالات وتقنية المعلومات جهةً منظمة للقطاع ويضع قواعد سرية الاتصالات وأجهزة التنصت وصلاحيات التفتيش وجرائم الاتصالات لذا يرجع إليه الفاحص حين يأتي الدليل من المشغلين أو سجلات المشتركين أو الاتصالات المعترضة."
+  },
+  "notes_en": [
+   "Article 51 makes phone calls and private telecommunications confidential and holds violators legally accountable.",
+   "Article 46 limits possession of bugging devices to official entities named by decree, and they may only use them with prior permission from the Public Prosecution under the criminal procedure code.",
+   "Article 59 lets designated CITRA employees enter and inspect telecom sites, examine licences, books, registers and documents, and seize unlicensed or misused equipment, without prejudice to the criminal procedure law.",
+   "Article 61 requires CITRA to inform the Public Prosecution when an inspection reveals a suspected crime.",
+   "Article 72 punishes hiding, copying or disclosing messages and manipulating subscriber data, including unlisted numbers and sent or received messages."
+  ],
+  "caveat_en": "Issued 8 May 2014. Amended by Law No. 98 of 2015, and its executive regulations were issued by Cabinet Resolution No. 993 of 2015. The Council of Europe lists this law as Kuwait's legal basis for real time collection of traffic data and interception of content data.",
+  "source": {
+   "url": "https://citra.gov.kw/sites/en/LawofCITRA/Law%20No.%2037-%202014.pdf",
+   "name": "CITRA (English translation of the law)"
+  },
+  "verified": true
+ },
+ {
+  "id": "kw-law-17-1960",
+  "country": "KW",
+  "year": 1960,
+  "type": "law",
+  "title": {
+   "en": "Law No. 17 of 1960 issuing the Code of Criminal Procedures and Trials",
+   "ar": "القانون رقم 17 لسنة 1960 بإصدار قانون الإجراءات والمحاكمات الجزائية"
+  },
+  "summary": {
+   "en": "Kuwait's criminal procedure code. It sets who investigates, how searches and seizures are ordered and recorded, how experts are used and how courts weigh evidence. Its search and seizure articles say nothing specific about computers or electronic data, so digital search and seizure follow these general rules.",
+   "ar": "هو قانون الإجراءات الجزائية في الكويت إذ يحدد من يحقق وكيف يُؤمر بالتفتيش والضبط ويُوثّقان وكيف يُستعان بالخبراء وكيف تزن المحاكم الأدلة غير أن مواد التفتيش والضبط لا تذكر الحاسوب ولا البيانات الإلكترونية فيخضع التفتيش الرقمي لهذه القواعد العامة."
+  },
+  "notes_en": [
+   "Article 9 gives the Public Prosecution investigation and prosecution powers for felonies, and police investigators those powers for misdemeanours.",
+   "Article 80 allows the investigator, or someone acting on the investigator's order, to search a person, home or letters to seize items used in, produced by or related to the crime, when the investigation requires it and no other means exists.",
+   "Article 91 requires seized items to be recorded in a report describing them, their condition and how and where they were found, and to be sealed in containers labelled with the date, place, reason, case and the signature of the person who seized them.",
+   "Article 87 bars the investigator from delegating the reading of seized letters, and allows phone calls to be monitored and recorded only under an order that clearly identifies the calls and for no longer than the investigation needs.",
+   "Articles 100 and 101 let the investigator ask anyone with technical expertise for a sworn opinion, require that opinion in writing, and let each party file a consultative report from another expert.",
+   "Article 151 has the court base its conviction on evidence from its own investigation or the pre-trial investigations, lets it weigh one piece of evidence against another freely, and bars the judge from relying on personal knowledge."
+  ],
+  "caveat_en": "Issued 2 June 1960 and in force from 1 November 1960. Often cited as a decree law, but the Ministry of Justice text titles it Law No. 17 of 1960. Lexis Middle East reports that Decree-Law No. 62 of 2025 added electronic notification of judgments in absentia and amended Article 230 on fines. Check the latest consolidated text before citing.",
+  "source": {
+   "url": "https://moj.gov.kw/AR/Documents/MojDocs2/law102.pdf",
+   "name": "Ministry of Justice, Kuwait (annotated Arabic edition)"
+  },
+  "verified": true
+ },
+ {
+  "id": "kw-dl-39-1980",
+  "country": "KW",
+  "year": 1980,
+  "type": "law",
+  "title": {
+   "en": "Decree-Law No. 39 of 1980 on Evidence in Civil and Commercial Matters",
+   "ar": "المرسوم بالقانون رقم 39 لسنة 1980 بشأن الإثبات في المواد المدنية والتجارية"
+  },
+  "summary": {
+   "en": "Kuwait's general evidence law for civil and commercial cases. The Electronic Transactions Law refers questions about authenticating electronic records back to it, so it shapes how a court treats printouts, official records and expert assisted inspections in civil disputes.",
+   "ar": "هو قانون الإثبات العام في القضايا المدنية والتجارية ويحيل إليه قانون المعاملات الإلكترونية مسائل التحقق من صحة السجلات الإلكترونية لذا يحدد كيف تتعامل المحكمة مع المطبوعات والسجلات الرسمية والمعاينة بمساعدة الخبراء في النزاعات المدنية."
+  },
+  "notes_en": [
+   "Article 9 makes an official document binding on everyone as to what its author recorded within their duties, unless it is proven forged by the legal procedure.",
+   "Article 7 lets the court change evidentiary steps it ordered and decline to rely on the result of an evidentiary procedure if it gives reasons in its judgment.",
+   "Article 71 lets the court inspect the disputed matter on request or on its own motion and appoint an expert to assist.",
+   "Article 7 of Law No. 20 of 2014 applies this law to authenticating electronic documents, their hard copies and electronic signatures where the electronic transactions law is silent.",
+   "Article 73 brought the law into force on 1 November 1980."
+  ],
+  "caveat_en": "The portal says its text is not official, so confirm against the Official Gazette. The 1980 text itself has no provisions on electronic documents. Expert work is governed by Decree-Law No. 40 of 1980 on expertise (see the Cassation 536/2003 entry).",
+  "source": {
+   "url": "https://www.mohamah.net/law/?p=41697",
+   "name": "Mohamah.net legal portal (unofficial Arabic text)"
+  },
+  "verified": true
+ },
+ {
+  "id": "kw-law-16-1960",
+  "country": "KW",
+  "year": 1960,
+  "type": "law",
+  "title": {
+   "en": "Law No. 16 of 1960 issuing the Penal Code",
+   "ar": "القانون رقم 16 لسنة 1960 بإصدار قانون الجزاء"
+  },
+  "summary": {
+   "en": "Background only. The general Penal Code still matters because the cybercrime law keeps its harsher penalties and applies some of its general rules, and traditional offences such as forgery and fraud can be charged alongside IT crimes.",
+   "ar": "يُذكر للخلفية فقط لأن قانون الجرائم الإلكترونية يحتفظ بعقوباته الأشد ويطبق بعض قواعده العامة ولأن الجرائم التقليدية كالتزوير والاحتيال قد يُتهم بها الشخص إلى جانب جرائم تقنية المعلومات."
+  },
+  "notes_en": [
+   "Article 16 of Law No. 63 of 2015 keeps any harsher penalty set by the Penal Code or another law.",
+   "Article 19 of Law No. 63 of 2015 applies Penal Code Articles 46 and 79 to IT crimes.",
+   "A Council of Europe legal profile points to Articles 238 and 257 to 260 for computer related forgery, calling them specialised and limited in scope, and to Articles 231, 260 and 261 for computer related fraud.",
+   "The same profile cites Articles 200, 201, 202 and 204 for child related offences and notes that only Articles 200 and 201 define a minor as a person under 18."
+  ],
+  "caveat_en": "Included as background. Article numbers come from the Council of Europe profile and the text of Law No. 63 of 2015, not from a full reading of the Penal Code.",
+  "source": {
+   "url": "https://rm.coe.int/octocom-legal-profile-kuwait/16809e5372",
+   "name": "Council of Europe, Octopus legal profile of Kuwait (16 April 2020)"
+  },
+  "verified": true
+ },
+ {
+  "id": "kw-law-9-2001",
+  "country": "KW",
+  "year": 2001,
+  "type": "law",
+  "title": {
+   "en": "Law No. 9 of 2001 on the Misuse of Telephone Communication Devices and Wiretapping Devices",
+   "ar": "القانون رقم 9 لسنة 2001 بشأن إساءة استعمال أجهزة الاتصالات الهاتفية وأجهزة التنصت"
+  },
+  "summary": {
+   "en": "Criminalises abusive use of phones, including secret photos and recordings, and controls wiretapping equipment. It matters when the evidence is a recording or image made with a phone, or when interception is involved.",
+   "ar": "يجرّم إساءة استخدام الهاتف ومنها التصوير والتسجيل خلسة وينظم أجهزة التنصت لذا يهم الفاحص حين يكون الدليل تسجيلاً أو صورة التُقطت بالهاتف أو حين يوجد اعتراض للاتصالات."
+  },
+  "notes_en": [
+   "Article 1 bis punishes photographing or recording people without consent through telecom devices and spreading such material, with harsher penalties where violence or blackmail is involved.",
+   "Article 2 bans dealing in wiretapping devices, limits possession and use to designated authorities, and requires prior permission from the Public Prosecution before authorities use them.",
+   "Law No. 37 of 2014 requires CITRA to respect this law when tracing the source of radio signals.",
+   "The Council of Europe lists it among Kuwait's laws on illegal access, interception, data interference and misuse of devices."
+  ],
+  "caveat_en": "Article content was reviewed through the Council of Europe profile, not the official gazette text.",
+  "source": {
+   "url": "https://rm.coe.int/octocom-legal-profile-kuwait/16809e5372",
+   "name": "Council of Europe, Octopus legal profile of Kuwait (16 April 2020)"
+  },
+  "verified": true
+ },
+ {
+  "id": "kw-citra-dppr-26-2024",
+  "country": "KW",
+  "year": 2024,
+  "type": "regulation",
+  "title": {
+   "en": "CITRA Data Privacy Protection Regulation (Decision No. 26 of 2024, replacing Decision No. 42 of 2021)",
+   "ar": "لائحة حماية خصوصية البيانات الصادرة عن هيئة الاتصالات وتقنية المعلومات بالقرار رقم 26 لسنة 2024 بدلاً من القرار رقم 42 لسنة 2021"
+  },
+  "summary": {
+   "en": "CITRA's data protection rules for licensed communications and IT service providers. They set consent, purpose and security duties and a 24 hour breach notification duty, so a provider's incident timeline and notices become part of the evidence in a breach investigation.",
+   "ar": "هي قواعد حماية البيانات لمقدمي خدمات الاتصالات وتقنية المعلومات المرخصين وتفرض واجبات الموافقة وتحديد الغرض والأمان وواجب الإبلاغ عن الاختراق خلال 24 ساعة فيصبح الخط الزمني للحادثة لدى مقدم الخدمة وإشعاراته جزءاً من الأدلة في التحقيق."
+  },
+  "notes_en": [
+   "Decision No. 42 of 2021 was approved by the CITRA Board on 28 March 2021 and took effect on publication on 4 April 2021.",
+   "Decision No. 26 of 2024 replaced it, was published in the Official Gazette on 18 February 2024, and gave service providers a one year grace period.",
+   "Service providers must report personal data breaches to CITRA and affected users within 24 hours. Notice to users is not needed if effective technical and organisational protection was applied to the data.",
+   "It covers processing inside or outside Kuwait and excludes security authorities handling data for crime control and public security.",
+   "A 2026 Chambers guide by GLA & Company says the regulation now applies only to CITRA licensed telecom and internet providers and that the Data Classification Policy was repealed in February 2024."
+  ],
+  "caveat_en": "DLA Piper words the deadline as 24 hours from becoming aware; the Chambers guide says 24 hours from the breach. The Decision No. 42 of 2021 text is on citra.gov.kw; the 2024 text was confirmed through Al Tamimi and DLA Piper summaries. Kuwait has no single general data protection statute.",
+  "source": {
+   "url": "https://www.dlapiperdataprotection.com/index.html?c=KW&t=law",
+   "name": "DLA Piper, Data Protection Laws of the World (Kuwait)"
+  },
+  "verified": true
+ },
+ {
+  "id": "kw-ncsc-decree-37-2022",
+  "country": "KW",
+  "year": 2022,
+  "type": "decision",
+  "title": {
+   "en": "Decree No. 37 of 2022 establishing the National Cyber Security Center (NCSC)",
+   "ar": "المرسوم رقم 37 لسنة 2022 بإنشاء المركز الوطني للأمن السيبراني"
+  },
+  "summary": {
+   "en": "Creates Kuwait's National Cyber Security Center as the national cybersecurity body. Its powers to classify incidents, direct response teams and investigate threats shape how government and critical sector incidents are handled and documented.",
+   "ar": "ينشئ المركز الوطني للأمن السيبراني جهةً وطنية للأمن السيبراني في الكويت وتحدد صلاحياته في تصنيف الحوادث وتوجيه فرق الاستجابة والتحقيق في التهديدات طريقة التعامل مع حوادث الجهات الحكومية والقطاعات الحيوية وتوثيقها."
+  },
+  "notes_en": [
+   "Article 2 creates the center as a body supervised by the minister designated by the Council of Ministers.",
+   "Article 3 sets objectives that include building a national cybersecurity system, protecting vital interests in cyberspace and protecting critical infrastructure.",
+   "Article 4 gives it powers to set strategies, policies and standards, classify cybersecurity incidents, assess and instruct incident response teams, intervene technically, monitor threats and conduct investigations, and license cybersecurity companies and experts.",
+   "The decree text published by Al Anba sets no explicit duty for organisations to report incidents to the center, though the head of the center may issue decisions on how to respond to incidents that could threaten state security."
+  ],
+  "caveat_en": "The decree number is confirmed by Kuwait Times (July 2023), the NCSI index and a 2026 Chambers guide. ncsc.gov.kw could not be reached during research. CITRA announced a national cyber security center in 2018, but this decree is the current legal basis. The NCSI index (April 2023) found no evidence of a legal incident reporting obligation.",
+  "source": {
+   "url": "https://www.alanba.com.kw/1100125",
+   "name": "Al Anba newspaper (decree text as reported, 6 February 2022)"
+  },
+  "verified": true
+ },
+ {
+  "id": "kw-ncsc-nbcc-2026",
+  "country": "KW",
+  "year": 2026,
+  "type": "framework",
+  "title": {
+   "en": "National Basic Cybersecurity Controls (NCSC Decision No. 2 of 2026)",
+   "ar": "الضوابط الوطنية الأساسية للأمن السيبراني بقرار المركز الوطني للأمن السيبراني رقم 2 لسنة 2026"
+  },
+  "summary": {
+   "en": "A mandatory minimum cybersecurity baseline issued by the National Cyber Security Center. It aims to raise readiness to detect, respond to and recover from incidents across government and critical sectors, which shapes what logs and records exist when an incident is investigated.",
+   "ar": "هي حد أدنى إلزامي للأمن السيبراني يصدره المركز الوطني للأمن السيبراني ويرفع جاهزية الجهات الحكومية والحيوية لاكتشاف الحوادث والاستجابة لها والتعافي منها وهذا يحدد ما يوجد من سجلات وقيود حين يُحقَّق في حادثة."
+  },
+  "notes_en": [
+   "Issued by the NCSC as Decision No. 2 of 2026 on 5 April 2026 and published in Kuwait Al Youm under Decree No. 37 of 2022.",
+   "Applies to civil government agencies, military authorities, security agencies and critical private sector institutions.",
+   "Covered entities have 18 months from publication to comply fully.",
+   "Built on six control domains aligned with NIST CSF 2.0 (Govern, Identify, Protect, Detect, Respond, Recover).",
+   "RSM highlights annual self assessments and evidence retention among its requirements."
+  ],
+  "caveat_en": "Based on RSM and 6clicks summaries and a Kuwait Times report of 6 April 2026; the official text could not be fetched. No specific deadline for reporting incidents to the NCSC was found.",
+  "source": {
+   "url": "https://www.rsm.global/kuwait/node/282",
+   "name": "RSM Kuwait"
+  },
+  "verified": true
+ },
+ {
+  "id": "kw-cbk-corf-2025",
+  "country": "KW",
+  "year": 2025,
+  "type": "framework",
+  "title": {
+   "en": "Central Bank of Kuwait Cyber and Operational Resilience Framework (CORF) for All Local Banks and Financial Institutions",
+   "ar": "إطار المرونة السيبرانية والتشغيلية الصادر عن بنك الكويت المركزي لجميع البنوك والمؤسسات المالية المحلية"
+  },
+  "summary": {
+   "en": "The Central Bank of Kuwait's cyber and operational resilience rules for the institutions it regulates. It is unusually specific on digital forensics, with chain of custody, hashing and logging of forensic work, and very short deadlines for reporting incidents to the regulator.",
+   "ar": "هو قواعد بنك الكويت المركزي للمرونة السيبرانية والتشغيلية للمؤسسات الخاضعة لرقابته ويتميز بالتفصيل في التحليل الجنائي الرقمي إذ يتناول سلسلة الحيازة وحساب البصمات وتسجيل أعمال الفحص ومهلاً قصيرة جداً لإبلاغ الجهة الرقابية بالحوادث."
+  },
+  "notes_en": [
+   "Version 1.0 was first released on 3 December 2025 and builds on the central bank's 2020 Cybersecurity Framework.",
+   "Controls 8.2.2.1 to 8.2.2.3 require initial reports to the central bank within 1 hour of discovery for high severity incidents and 4 hours for medium, updates every 4 hours (high) or daily (medium), closure reports, and monthly consolidated reports for low severity incidents.",
+   "Control 5.12.4.7 requires chain of custody for all evidence, with documented transfers, dates and people involved.",
+   "Control 5.12.4.8 requires evidence to be protected with cryptographic hashes such as SHA-256 or SHA-512, with integrity verified before and after every forensic task.",
+   "Control 5.12.4.9 requires every forensic task to be logged with tools, versions and configurations, time stamped activities and observations.",
+   "Control 5.12.4.10 requires a DFIR capability through internal 24/7 responders or external retainers, and control 5.11.2.4 requires prompt notice to the central bank of personal data breaches."
+  ],
+  "caveat_en": "Controls 5.x sit in Chapter 4 (Cyber Resilience Baselines) and 8.2.2 in Chapter 5 (Operational Resilience Baselines) of Version 1.0. Control 5.12.4.4 also requires procedures on when management, law enforcement or regulator approval is needed before forensic work starts. The 2020 framework was announced on 18 February 2020.",
+  "source": {
+   "url": "https://www.cbk.gov.kw/en/images/corf-170113_v10_tcm10-170113.pdf",
+   "name": "Central Bank of Kuwait"
+  },
+  "verified": true
+ },
+ {
+  "id": "kw-law-106-2013",
+  "country": "KW",
+  "year": 2013,
+  "type": "law",
+  "title": {
+   "en": "Law No. 106 of 2013 on Anti-Money Laundering and Combating the Financing of Terrorism",
+   "ar": "القانون رقم 106 لسنة 2013 في شأن مكافحة غسل الأموال وتمويل الإرهاب"
+  },
+  "summary": {
+   "en": "Kuwait's AML and CFT law. Its record keeping rule means due diligence and transaction records must exist for at least five years, which gives investigators a dependable trail to request.",
+   "ar": "هو قانون مكافحة غسل الأموال وتمويل الإرهاب في الكويت ويوجب الاحتفاظ بسجلات العناية الواجبة والمعاملات خمس سنوات على الأقل فيجد المحققون أثراً موثوقاً يمكن طلبه."
+  },
+  "notes_en": [
+   "Article 11 requires financial institutions and designated non-financial businesses and professions to keep records and make them available to competent authorities.",
+   "Due diligence records must be kept for at least five years after the business relationship ends, and transaction records for at least five years after the transaction or attempt.",
+   "A competent authority may require longer retention in specific cases.",
+   "Article 9 of Law No. 63 of 2015 separately punishes money laundering through networks or IT means with up to ten years in prison."
+  ],
+  "caveat_en": "Issued 8 May 2013. Central Bank of Kuwait AML/CFT instructions repeat the five year retention for the entities they regulate. Al Jarida reports that Decree-Law No. 76 of 2025 amended Article 25 and added Article 33 bis on UN Security Council measures, not the record keeping rule.",
+  "source": {
+   "url": "https://www.alkarama.org/sites/default/files/2016-11/KWT_Anti-MoneyLaunderingAndCombatingTheFinancingOfTerrorismLawNo.%28106%29of2013.pdf",
+   "name": "English translation of Law No. 106 of 2013 (hosted by Alkarama)"
+  },
+  "verified": true
+ },
+ {
+  "id": "kw-cassation-24-2008",
+  "country": "KW",
+  "year": 2008,
+  "type": "court",
+  "title": {
+   "en": "Kuwait Court of Cassation, Criminal Appeal No. 24 of 2008 (session of 7 July 2008) on seized computers",
+   "ar": "حكم محكمة التمييز في الطعن الجزائي رقم 24 لسنة 2008 بجلسة 7 يوليو 2008 بشأن الحواسيب المضبوطة"
+  },
+  "summary": {
+   "en": "A Court of Cassation principle, published in the Ministry of Justice's annotated criminal procedure code, applying ordinary search and seizure rules to computers and discs. It is a useful reference because the procedure code has no computer specific search provisions.",
+   "ar": "هو مبدأ لمحكمة التمييز منشور في قانون الإجراءات الجزائية المشروح الصادر عن وزارة العدل يطبق قواعد التفتيش والضبط العادية على الحواسيب والأقراص لذا يفيد مرجعاً لأن قانون الإجراءات يخلو من نصوص خاصة بتفتيش الحاسوب."
+  },
+  "notes_en": [
+   "The court upheld the seizure of computers, CDs and floppy disks found with the appellants and the examination of the files on them.",
+   "It noted the media held general material and speeches from the internet and no postal or telegraphic letters, the category that only the investigator may read under the code.",
+   "The annotated code files the ruling under a heading on searching computers, next to the rule that the investigator, or someone acting on the investigator's order, may search a person, home or letters.",
+   "Reported in the Justice and Law Journal, year 36, part 3, page 523."
+  ],
+  "caveat_en": "Summary taken from the Ministry of Justice annotation, not the full judgment.",
+  "source": {
+   "url": "https://moj.gov.kw/AR/Documents/MojDocs2/law102.pdf",
+   "name": "Ministry of Justice, Kuwait (annotated Code of Criminal Procedures and Trials)"
+  },
+  "verified": true
+ },
+ {
+  "id": "kw-cassation-536-2003",
+  "country": "KW",
+  "year": 2005,
+  "type": "court",
+  "title": {
+   "en": "Kuwait Court of Cassation, Civil Appeal No. 536 of 2003 (session of 21 November 2005) on expert reports",
+   "ar": "حكم محكمة التمييز في الطعن المدني رقم 536 لسنة 2003 بجلسة 21 نوفمبر 2005 بشأن تقارير الخبراء"
+  },
+  "summary": {
+   "en": "Shows how Kuwaiti courts treat expert reports, including those by technical experts from outside the Ministry of Justice Experts Department. The court has the final word on an expert's findings, so a forensic report must be clear enough to persuade it.",
+   "ar": "يبين كيف تتعامل المحاكم الكويتية مع تقارير الخبراء ومنها تقارير الخبراء الفنيين من خارج إدارة الخبراء بوزارة العدل ولأن للمحكمة الكلمة الأخيرة في ما ينتهي إليه الخبير يجب أن يكون التقرير الجنائي واضحاً بما يكفي لإقناعها."
+  },
+  "notes_en": [
+   "Article 4 (second paragraph) of Decree-Law No. 40 of 1980 on expertise requires an expert appointed from outside the Experts Department or the experts roster to take an oath before the court or the urgent matters judge before starting.",
+   "The Court of Cassation held that a missing oath does not void the report, because the law sets no nullity for it and the rule is not one of public order.",
+   "The trial court is the highest expert in the case and may adopt or reject an expert report, even on a technical question.",
+   "The research gives a forensic doctor of the Ministry of Interior's Criminal Evidence Department as an example of an expert outside the Experts Department."
+  ],
+  "caveat_en": "This is a civil ruling, so treat it as persuasive on expert evidence generally. In criminal investigations, Articles 100 and 101 of the criminal procedure code also apply.",
+  "source": {
+   "url": "https://www.kijls.moj.gov.kw/ar/sections/section4/sub4_section4/Research&Translation/Researchs/%D8%AD%D9%82%20%D8%A7%D9%84%D9%85%D8%AD%D9%83%D9%85%D8%A9%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%A3%D8%AE%D8%B0%20%D8%A8%D8%AA%D9%82%D8%B1%D9%8A%D8%B1%20%D8%A7%D9%84%D8%AE%D8%A8%D9%8A%D8%B1.pdf",
+   "name": "Kuwait Institute for Judicial and Legal Studies (Ministry of Justice), bulletin no. 12, January 2019"
+  },
+  "verified": true
+ },
+ {
+  "id": "sa-acl-m17-2007",
+  "country": "SA",
+  "year": 2007,
+  "type": "law",
+  "title": {
+   "en": "Anti-Cyber Crime Law (Royal Decree No. M/17 of 8/3/1428H)",
+   "ar": "نظام مكافحة جرائم المعلوماتية الصادر بالمرسوم الملكي رقم م/17 بتاريخ 8/3/1428هـ"
+  },
+  "summary": {
+   "en": "Saudi Arabia's core cybercrime law. It lists offences from interception and unlawful access to fraud and data destruction, and assigns investigation, prosecution and technical support roles.",
+   "ar": "هو النظام الأساسي للجرائم المعلوماتية في المملكة العربية السعودية ويعدد الجرائم من التنصت والدخول غير المشروع إلى الاحتيال وإتلاف البيانات ويوزع أدوار التحقيق والادعاء والدعم الفني."
+  },
+  "notes_en": [
+   "Article 3 punishes interception of data sent over a network or computer without legitimate authorisation, among other offences, with up to one year in prison and a fine up to SAR 500,000.",
+   "Article 5 punishes unlawful access to delete, destroy, leak or alter private data, and disrupting networks or services, with up to four years and SAR 3 million.",
+   "Article 13 allows confiscation of equipment, software and proceeds and closure of the website or venue used.",
+   "Article 14 requires the Communications and Information Technology Commission to give technical support to security agencies during investigation and trial.",
+   "Article 15 assigns investigation and prosecution to the Bureau of Investigation and Public Prosecution, and Article 16 brought the law into force 120 days after publication."
+  ],
+  "caveat_en": "Dated 26 March 2007. The 2009 translation uses the institution names of that time, so check the current names of the investigating and technical bodies. The Arabic text governs.",
+  "source": {
+   "url": "https://www.mcit.gov.sa/sites/default/files/anti_cyber_crime_law_en_0.pdf",
+   "name": "Bureau of Experts at the Council of Ministers, official translation (hosted by MCIT)"
+  },
+  "verified": true
+ },
+ {
+  "id": "sa-evidence-m43-2021",
+  "country": "SA",
+  "year": 2021,
+  "type": "law",
+  "title": {
+   "en": "Law of Evidence (Royal Decree No. M/43)",
+   "ar": "نظام الإثبات الصادر بالمرسوم الملكي رقم م/43"
+  },
+  "summary": {
+   "en": "Saudi Arabia's evidence law for civil and commercial cases, with a full part on digital evidence. It treats digital evidence like writing and sets rules on originals, extracts and verification that map directly onto forensic reporting.",
+   "ar": "هو نظام الإثبات في القضايا المدنية والتجارية في المملكة العربية السعودية وفيه باب كامل للدليل الرقمي يعامله معاملة الكتابة ويضع قواعد للأصل والمستخرجات والتحقق تتطابق مع طريقة كتابة التقرير الجنائي."
+  },
+  "notes_en": [
+   "Article 53 defines digital evidence as evidence derived from data generated, issued, delivered, stored or communicated by digital means and retrievable in a comprehensible form.",
+   "Article 54 lists digital registers, documents, signatures, correspondence including email, means of communication and digital media, and Article 55 gives digital evidence the same effect as writing.",
+   "Article 56 gives official digital evidence the value of an official document, including records generated automatically by public agencies' systems, and Article 58 puts the burden on the party who disputes it.",
+   "Article 60 requires digital evidence to be submitted in its original or another digital form, and Article 63 gives extracts the same value as long as they match the digital register.",
+   "Article 62 lets the court assess probative value itself when the evidence cannot be verified for reasons outside the parties' control, and Article 129 brought the law into force 180 days after publication."
+  ],
+  "caveat_en": "Dated 30 December 2021 in the translation, last updated 18 September 2022. Article 1 limits the law to civil and commercial transactions, so criminal cases follow separate procedure rules. Article 127 allows private sector help in evidentiary procedures under rules from the Minister of Justice.",
+  "source": {
+   "url": "https://misa.gov.sa/app/uploads/2025/07/Law-of-Evidence.pdf",
+   "name": "Bureau of Experts at the Council of Ministers, official translation (hosted by MISA)"
+  },
+  "verified": true
+ },
+ {
+  "id": "sa-nca-ecc-2-2024",
+  "country": "SA",
+  "year": 2024,
+  "type": "framework",
+  "title": {
+   "en": "Essential Cybersecurity Controls (ECC-2:2024), National Cybersecurity Authority",
+   "ar": "الضوابط الأساسية للأمن السيبراني ECC-2:2024 الصادرة عن الهيئة الوطنية للأمن السيبراني"
+  },
+  "summary": {
+   "en": "The NCA's baseline controls for government bodies and critical infrastructure operators. They require incident reporting to the NCA and minimum log retention, both of which decide what evidence exists after an incident.",
+   "ar": "هي الضوابط الأساسية التي تصدرها الهيئة للجهات الحكومية ومشغلي البنية التحتية الحيوية وتوجب إبلاغ الهيئة بالحوادث والاحتفاظ بالسجلات حداً أدنى وكلاهما يحدد ما يبقى من أدلة بعد الحادثة."
+  },
+  "notes_en": [
+   "Applies to government agencies and their affiliated companies and entities inside and outside the Kingdom, and to private entities that own, operate or host Critical National Infrastructure.",
+   "Subdomain 2-13 covers cybersecurity incident and threat management, and control 2-13-3-3 requires reporting cybersecurity incidents to the NCA.",
+   "Control 2-13-3-4 requires sharing incident notifications, threat intelligence, indicators and incident reports with the NCA.",
+   "The NCA guide names approved reporting channels such as the Haseen portal and the is@nca.gov.sa mailbox.",
+   "Control 2-12-3-5 requires cybersecurity event logs to be kept for at least 12 months."
+  ],
+  "caveat_en": "Control texts were checked through the NCA implementation guide, which uses ECC-2:2024 numbering and scope. The guide's text for control 2-13-3-3 sets no reporting deadline. ECC-2:2024 is the second edition after ECC-1:2018.",
+  "source": {
+   "url": "https://cdn.nca.gov.sa/api/files/public/upload/11bb8f2d-706a-4f18-80f1-40d620ebd845_GECC-.pdf",
+   "name": "National Cybersecurity Authority, Guide to ECC Implementation (GECC-2:2026)"
+  },
+  "verified": true
+ },
+ {
+  "id": "sa-pdpl-m19-2021",
+  "country": "SA",
+  "year": 2021,
+  "type": "law",
+  "title": {
+   "en": "Personal Data Protection Law (Royal Decree No. M/19 of 9/2/1443H, amended by Royal Decree No. M/148 of 5/9/1444H)",
+   "ar": "نظام حماية البيانات الشخصية الصادر بالمرسوم الملكي رقم م/19 بتاريخ 9/2/1443هـ والمعدل بالمرسوم الملكي رقم م/148 بتاريخ 5/9/1444هـ"
+  },
+  "summary": {
+   "en": "Saudi Arabia's general data protection law, supervised by SDAIA. Its breach notification duty starts a 72 hour clock that shapes incident response and early evidence collection.",
+   "ar": "هو النظام العام لحماية البيانات في المملكة العربية السعودية تحت إشراف الهيئة السعودية للبيانات والذكاء الاصطناعي ويبدأ واجب الإبلاغ عن الاختراق فيه مهلة 72 ساعة تشكّل الاستجابة للحادثة وجمع الأدلة المبكر."
+  },
+  "notes_en": [
+   "Issued 16 September 2021, amended 27 March 2023, in force from 14 September 2023, with enforcement from 14 September 2024 after a one year transition.",
+   "Under Article 24 of the Implementing Regulations, controllers must notify SDAIA within 72 hours of becoming aware of a breach that may harm personal data or data subjects or conflict with their rights, through the National Data Governance Portal.",
+   "Data subjects must be notified without undue delay where the breach may harm them or their rights.",
+   "Draft amendments to Article 24, under public consultation from 6 October to 5 November 2026, would require notice to SDAIA within 72 hours whether or not harm is likely.",
+   "Controllers must keep a record of processing activities for as long as the processing lasts plus five years."
+  ],
+  "caveat_en": "Article 24 and the 2026 draft come from Clyde & Co (8 October 2026) and PwC; the portal from DLA Piper; the processing record rule from Clyde & Co (September 2023). The breach article number in the Law itself was not confirmed, so it is omitted.",
+  "source": {
+   "url": "https://www.lw.com/en/insights/2023/12/Saudi-Arabias-data-protection-law-enters-into-force",
+   "name": "Latham & Watkins client alert (December 2023)"
+  },
+  "verified": true
+ },
+ {
+  "id": "ae-fdl-34-2021",
+  "country": "AE",
+  "year": 2021,
+  "type": "law",
+  "title": {
+   "en": "Federal Decree-Law No. 34 of 2021 on Countering Rumors and Cybercrimes",
+   "ar": "مرسوم بقانون اتحادي رقم 34 لسنة 2021 في شأن مكافحة الشائعات والجرائم الإلكترونية"
+  },
+  "summary": {
+   "en": "The UAE's cybercrime law. It defines digital evidence, criminalises tampering with it, and gives evidence extracted from electronic devices the same force as physical forensic evidence in criminal cases.",
+   "ar": "هو قانون الجرائم الإلكترونية في الإمارات العربية المتحدة ويعرّف الدليل الرقمي ويجرّم العبث به ويمنح الدليل المستخرج من الأجهزة الإلكترونية حجية الدليل الجنائي المادي في القضايا الجزائية."
+  },
+  "notes_en": [
+   "Article 1 defines digital evidence as electronic information with probative value that is stored, transmitted, extracted or derived from computers or networks and can be gathered and analysed with special tools.",
+   "Article 65 gives evidence extracted from electronic devices, media, information systems and software the same probative force as physical forensic evidence.",
+   "Article 18 punishes anyone managing a website, account, email or information system who hides or tampers with digital evidence to obstruct investigators, with at least six months in prison and/or a fine of at least AED 200,000.",
+   "Article 16 punishes using tools, passcodes or encryption to commit these crimes or to hide their evidence or traces.",
+   "Issued 20 September 2021, published in Official Gazette No. 712 (supplement) on 26 September 2021, and in force from 2 January 2022. Article 73 repealed Decree-Law No. 5 of 2012."
+  ],
+  "caveat_en": "Article texts were read from the English translation hosted by ADGM. The portal lists one amendment (record updated 4 April 2024), which was not reviewed.",
+  "source": {
+   "url": "https://uaelegislation.gov.ae/en/legislations/1526",
+   "name": "UAE Legislation portal"
+  },
+  "verified": true
+ },
+ {
+  "id": "ae-fdl-35-2022",
+  "country": "AE",
+  "year": 2022,
+  "type": "law",
+  "title": {
+   "en": "Federal Decree-Law No. 35 of 2022 Promulgating the Law of Evidence in Civil and Commercial Transactions",
+   "ar": "مرسوم بقانون اتحادي رقم 35 لسنة 2022 بإصدار قانون الإثبات في المعاملات المدنية والتجارية"
+  },
+  "summary": {
+   "en": "The UAE civil and commercial evidence law. A dedicated part on electronic evidence sets what counts, how formal and informal electronic evidence are weighed, and the value of extracts.",
+   "ar": "هو قانون الإثبات المدني والتجاري في الإمارات وفيه باب مخصص للدليل الإلكتروني يحدد ما يُعد دليلاً وكيف يُوزن الدليل الإلكتروني الرسمي وغير الرسمي وما قيمة المستخرجات."
+  },
+  "notes_en": [
+   "Article 53 defines electronic evidence as evidence derived from data or information generated, stored, extracted or copied electronically.",
+   "Article 54 lists electronic records, instruments, signatures, seals, correspondence including email, modern means of communication and electronic media.",
+   "Article 55 applies the documentary evidence rules to electronic evidence, and Article 56 gives formal electronic evidence the value of formal instruments when its conditions are met.",
+   "Article 63(1) gives extracts of electronic evidence the same probative value as the evidence itself.",
+   "Issued 3 October 2022 and in force from 2 January 2023, replacing Federal Law No. 10 of 1992."
+  ],
+  "caveat_en": "The replacement of Law No. 10 of 1992 comes from a Taylor Wessing briefing, which also notes the court is not bound by an expert's opinion but must give reasons for rejecting it.",
+  "source": {
+   "url": "https://uaelegislation.gov.ae/en/legislations/1612",
+   "name": "UAE Legislation portal"
+  },
+  "verified": true
+ },
+ {
+  "id": "ae-fdl-45-2021",
+  "country": "AE",
+  "year": 2021,
+  "type": "law",
+  "title": {
+   "en": "Federal Decree-Law No. 45 of 2021 Concerning the Protection of Personal Data",
+   "ar": "مرسوم بقانون اتحادي رقم 45 لسنة 2021 بشأن حماية البيانات الشخصية"
+  },
+  "summary": {
+   "en": "The UAE federal data protection law. Its breach reporting article requires the controller to send details and documents of the breach, which overlap with incident and forensic records.",
+   "ar": "هو قانون حماية البيانات الاتحادي في الإمارات وتوجب مادة الإبلاغ عن الاختراق فيه أن يرسل المتحكم تفاصيل الاختراق ومستنداته وهي تتداخل مع سجلات الحادثة والفحص الجنائي."
+  },
+  "notes_en": [
+   "Article 9 requires the controller, on becoming aware of a breach that may harm privacy, confidentiality or security, to notify the regulator with the nature, causes and approximate number of records, expected effects, corrective measures and documents of the breach.",
+   "Article 9 also requires notice to data subjects where the breach would prejudice their privacy, and requires processors to tell the controller as soon as they learn of a breach.",
+   "Deadlines for both notices are left to the Executive Regulations.",
+   "Article 2 excludes government data, data held by security and judicial authorities, health and banking data covered by their own laws, and free zones with their own data protection laws.",
+   "Issued 20 September 2021 and in force from 2 January 2022."
+  ],
+  "caveat_en": "The official translation calls the regulator the Data Bureau; it is commonly called the UAE Data Office, created by Federal Decree-Law No. 44 of 2021. BSA Law reported in July 2024 that the Executive Regulations were not yet issued, and their later issue could not be confirmed.",
+  "source": {
+   "url": "https://uaelegislation.gov.ae/en/legislations/1972",
+   "name": "UAE Legislation portal"
+  },
+  "verified": true
+ },
+ {
+  "id": "qa-law-14-2014",
+  "country": "QA",
+  "year": 2014,
+  "type": "law",
+  "title": {
+   "en": "Law No. 14 of 2014 Promulgating the Cybercrime Prevention Law",
+   "ar": "القانون رقم 14 لسنة 2014 بإصدار قانون مكافحة الجرائم الإلكترونية"
+  },
+  "summary": {
+   "en": "Qatar's cybercrime law, with a full procedural chapter on electronic evidence, preservation and service provider duties. It is one of the most examiner friendly texts in the GCC.",
+   "ar": "هو قانون الجرائم الإلكترونية في دولة قطر وفيه فصل إجرائي كامل للدليل الإلكتروني وحفظه وواجبات مقدمي الخدمة لذا يُعد من أكثر النصوص الخليجية عوناً للفاحص."
+  },
+  "notes_en": [
+   "Article 14 lets the Public Prosecution, or an officer it authorises, search people, places and information systems under a reasoned and specific warrant that can be renewed.",
+   "Article 15 says evidence collected through IT techniques, systems, networks or electronic data may not be excluded because of its nature, and Article 16 accepts evidence gathered abroad through lawful international cooperation.",
+   "Articles 17 and 18 let the Public Prosecution order prompt collection of electronic, traffic or content data and order anyone to hand over relevant devices or data, and Article 19 requires seized devices and data to be protected until a judicial decision.",
+   "Article 21 requires service providers to keep user information for one year and to keep IT, traffic and content data on an urgent basis for 90 days, renewable at the request of the competent body or investigating authorities.",
+   "Article 22 requires state bodies to report crimes under the law, and unlawful attempts at capture, interception or spying, promptly to the competent authority at the Ministry of Interior, and to keep IT and user data for at least 120 days."
+  ],
+  "caveat_en": "The translation dates the law 15 September 2014, while an Al Tamimi briefing says 16 September 2014. Law No. 11 of 2025 added Article 8 bis on publishing images of people without consent (Pinsent Masons). The Arabic text in the Official Gazette governs.",
+  "source": {
+   "url": "https://sherloc.unodc.org/cld/uploads/res/document/the-cybercrime-prevention-law_html/Qatar_Cybercrime_Law_unofficial_translation.pdf",
+   "name": "UNODC SHERLOC (unofficial translation by Squire Patton Boggs)"
+  },
+  "verified": true
+ },
+ {
+  "id": "qa-law-13-2016",
+  "country": "QA",
+  "year": 2016,
+  "type": "law",
+  "title": {
+   "en": "Law No. 13 of 2016 on the Protection of Personal Data Privacy",
+   "ar": "القانون رقم 13 لسنة 2016 بشأن حماية خصوصية البيانات الشخصية"
+  },
+  "summary": {
+   "en": "Qatar's personal data law. It requires controllers to notify both the regulator and the individual of serious breaches, which drives early incident triage and evidence capture.",
+   "ar": "هو قانون البيانات الشخصية في دولة قطر ويوجب على المتحكم إبلاغ الجهة المختصة والفرد معاً بالاختراقات الجسيمة وهذا يدفع إلى الفرز المبكر للحادثة وحفظ الأدلة."
+  },
+  "notes_en": [
+   "Issued 3 November 2016, with Article 30 giving those it covers six months from entry into force to comply.",
+   "Article 14 requires the controller to inform the individual and the competent department of any breach of the required safeguards that may cause serious harm to personal data or privacy.",
+   "Regulatory guidelines issued in November 2020 set the notification deadline at 72 hours.",
+   "The regulator is now the National Cyber Governance and Assurance Affairs within the National Cyber Security Agency."
+  ],
+  "caveat_en": "The 72 hour deadline comes from Clyde & Co (March 2021) and DLA Piper (January 2024), and the current regulator from DLA Piper. Confirm the text against the Official Gazette.",
+  "source": {
+   "url": "https://al-sharq.com/article/03/11/2016/%D8%A8%D9%88%D8%A7%D8%A8%D8%A9-%D8%A7%D9%84%D8%B4%D8%B1%D9%82-%D8%AA%D9%86%D8%B4%D8%B1-%D9%86%D8%B5-%D9%82%D8%A7%D9%86%D9%88%D9%86-%D8%AD%D9%85%D8%A7%D9%8A%D8%A9-%D8%AE%D8%B5%D9%88%D8%B5%D9%8A%D8%A9-%D8%A7%D9%84%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA-%D8%A7%D9%84%D8%B4%D8%AE%D8%B5%D9%8A%D8%A9",
+   "name": "Al Sharq newspaper (published law text, 3 November 2016)"
+  },
+  "verified": true
+ },
+ {
+  "id": "qa-ncsa-incident-2025",
+  "country": "QA",
+  "year": 2025,
+  "type": "framework",
+  "title": {
+   "en": "National Cyber Security Agency (NCSA) and the National Incident Management Framework",
+   "ar": "الوكالة الوطنية للأمن السيبراني وإطار إدارة الحوادث الوطني"
+  },
+  "summary": {
+   "en": "Qatar's national cybersecurity agency coordinates incident handling and issues national standards. Its 2025 framework sets the stages for handling incidents of national significance, including investigation.",
+   "ar": "تنسق الوكالة الوطنية للأمن السيبراني في قطر التعامل مع الحوادث وتصدر المعايير الوطنية ويحدد إطارها لعام 2025 مراحل التعامل مع الحوادث ذات الأهمية الوطنية ومنها التحقيق."
+  },
+  "notes_en": [
+   "The agency was created by Amiri Decision No. 1 of 2021 to unify efforts to secure Qatar's cyberspace.",
+   "The National Incident Management Framework was launched in February 2025 for cyber incidents with national implications.",
+   "It has five stages: notification and categorisation, incident initiation, response and investigation, remediation and recovery, and closure and review.",
+   "Its components include command and control, detection and monitoring, investigation, national strategic response, system recovery and national incident review.",
+   "The agency also oversees the National Information Assurance Standard and, through its National Cyber Governance and Assurance Affairs, receives personal data breach notifications."
+  ],
+  "caveat_en": "The Amiri Decision number comes from a Gulf Times report (3 April 2021); the standard and breach role from Cisco and DLA Piper summaries. Who must report incidents to the NCSA, and by when, could not be verified, and ncsa.gov.qa returned no readable content.",
+  "source": {
+   "url": "https://www.qatar-tribune.com/article/163854/nation/ncsa-launches-national-incident-management-framework",
+   "name": "Qatar Tribune (19 February 2025)"
+  },
+  "verified": true
+ },
+ {
+  "id": "bh-law-60-2014",
+  "country": "BH",
+  "year": 2014,
+  "type": "law",
+  "title": {
+   "en": "Law No. 60 of 2014 on Information Technology Crimes",
+   "ar": "القانون رقم 60 لسنة 2014 بشأن جرائم تقنية المعلومات"
+  },
+  "summary": {
+   "en": "Bahrain's cybercrime law. Its procedural chapter provides Budapest style tools: expedited preservation, production orders, computer search, seizure and real time collection.",
+   "ar": "هو قانون الجرائم الإلكترونية في مملكة البحرين وفي فصله الإجرائي أدوات على نهج اتفاقية بودابست منها الحفظ العاجل وأوامر التقديم وتفتيش الحاسوب والضبط والجمع الآني."
+  },
+  "notes_en": [
+   "Article 12 lets the Public Prosecution order urgent preservation of specific data, including traffic data, for up to 90 days, extendable by the High Criminal Court in chambers by up to another 90 days in total, and lets it order the recipient to keep the order confidential.",
+   "Article 13 allows production orders for stored data, and orders to service providers for subscriber information, excluding traffic and content data.",
+   "Article 15 allows entry and search of an information system and storage media, extended to a connected system where the data is reachable from the first.",
+   "Article 16 allows seizing systems or media, copying and keeping data, preserving its integrity and making it inaccessible, but not information the accused gave to their lawyer or adviser for the case or their correspondence.",
+   "Article 18 allows real time collection of traffic and content data with a lower court judge's authorisation for up to 30 days at a time, renewable.",
+   "Article 22 applies the criminal procedure law and treats IT data and systems as things, papers and documents under it."
+  ],
+  "caveat_en": "Issued 30 September 2014 and in force one month after publication in the Official Gazette (Article 24). Article 14 separately lets a lower court judge order fast preservation and partial disclosure of traffic data. The Council of Europe lists Bahrain's Budapest Convention status as NA.",
+  "source": {
+   "url": "https://www.lloc.gov.bh/FullEn/K6014.docx",
+   "name": "Legislation and Legal Opinion Commission, Bahrain (English translation)"
+  },
+  "verified": true
+ },
+ {
+  "id": "bh-law-30-2018",
+  "country": "BH",
+  "year": 2018,
+  "type": "law",
+  "title": {
+   "en": "Law No. 30 of 2018 issuing the Personal Data Protection Law",
+   "ar": "القانون رقم 30 لسنة 2018 بإصدار قانون حماية البيانات الشخصية"
+  },
+  "summary": {
+   "en": "Bahrain's data protection law, supervised by the Personal Data Protection Authority. A 2022 resolution added a 72 hour breach notification duty.",
+   "ar": "هو قانون حماية البيانات في البحرين تحت إشراف هيئة حماية البيانات الشخصية وأضاف قرار صدر في 2022 واجب الإبلاغ عن الاختراق خلال 72 ساعة."
+  },
+  "notes_en": [
+   "Issued 12 July 2018 and in force from 1 August 2019.",
+   "Resolution No. 43 of 2022 requires controllers to notify the authority no later than 72 hours after becoming aware of a breach, unless it is unlikely to risk data subjects' rights.",
+   "Controllers must also inform data subjects of breaches in certain circumstances.",
+   "Ten ministerial resolutions issued on 17 March 2022 added rules on transfers, security measures, sensitive data, data protection officers, data subject rights and complaints."
+  ],
+  "caveat_en": "The issue date and Arabic title were checked on the LLOC Arabic text (lloc.gov.bh/FullAr/K3018.docx), which brings the law into force on the first day of the month after one year from Gazette publication.",
+  "source": {
+   "url": "https://www.clydeco.com/en/insights/2022/04/bahrain-issues-new-privacy-guidelines",
+   "name": "Clyde & Co briefing (April 2022)"
+  },
+  "verified": true
+ },
+ {
+  "id": "om-rd-61-2026",
+  "country": "OM",
+  "year": 2026,
+  "type": "law",
+  "title": {
+   "en": "Royal Decree No. 61/2026 issuing the Law on Combating Information Technology Crimes",
+   "ar": "المرسوم السلطاني رقم 61/2026 بإصدار قانون مكافحة جرائم تقنية المعلومات"
+  },
+  "summary": {
+   "en": "Oman's new cybercrime law, in force since June 2026. It defines digital evidence, gives the ministry a route to obtain data under judicial order, and makes hiding or tampering with digital evidence a crime.",
+   "ar": "هو قانون الجرائم الإلكترونية الجديد في سلطنة عُمان النافذ منذ يونيو 2026 ويعرّف الدليل الرقمي ويمنح الوزارة طريقاً للحصول على البيانات بأمر قضائي ويجرّم إخفاء الدليل الرقمي أو العبث به."
+  },
+  "notes_en": [
+   "Article 1 defines digital evidence as any electronic data or information with probative value that is stored, transmitted or extracted from an information system or IT means.",
+   "Article 3 gives judicial officer status to employees named by the competent authority in agreement with the Minister of Transport, Communications and Information Technology.",
+   "Article 4 lets the ministry, where there are sufficient reasons to believe an IT crime occurred, obtain electronic data from bodies inside and outside Oman on a judicial order from the Public Prosecution or the competent court, without prejudice to the Cyber Defense Center's powers.",
+   "Article 14 punishes hiding or refusing to give judicial officers the passwords of IT means used in a crime.",
+   "Article 15 punishes anyone responsible for digital evidence who hides it, refuses to hand it over or tampers with it, with 6 months to 3 years in prison and a fine of OMR 1,000 to 3,000.",
+   "Article 60 lets the court confiscate the devices, tools and software used and close the system, website or premises."
+  ],
+  "caveat_en": "Issued 1 June 2026, published in Official Gazette No. 1651 on 7 June 2026, and in force the next day. It repealed Royal Decree 12/2011. Qanoon.om says it is not an official source, so check the Gazette.",
+  "source": {
+   "url": "https://qanoon.om/p/2026/rd2026061/",
+   "name": "Qanoon.om (reproduction of the Official Gazette text)"
+  },
+  "verified": true
+ },
+ {
+  "id": "om-rd-12-2011",
+  "country": "OM",
+  "year": 2011,
+  "type": "law",
+  "title": {
+   "en": "Royal Decree No. 12/2011 issuing the Cyber Crime Law (repealed)",
+   "ar": "المرسوم السلطاني رقم 12/2011 بإصدار قانون مكافحة جرائم تقنية المعلومات وهو ملغى"
+  },
+  "summary": {
+   "en": "Oman's earlier cybercrime law. It was repealed in June 2026 but remains relevant to older cases and to research written before the change.",
+   "ar": "هو قانون الجرائم الإلكترونية السابق في عُمان وقد أُلغي في يونيو 2026 لكنه يبقى مهماً للقضايا الأقدم وللبحوث المكتوبة قبل التغيير."
+  },
+  "notes_en": [
+   "Issued 6 February 2011, published in Official Gazette No. 929 on 15 February 2011, and in force the day after publication.",
+   "It repealed the cybercrime chapter (chapter two bis of book seven) of the earlier Omani Penal Law.",
+   "Royal Decree No. 61/2026 repealed it."
+  ],
+  "caveat_en": "The text of the attached law sat behind a members only notice and was not reviewed. Whether it still governs acts committed before June 2026 depends on transitional rules that were not checked.",
+  "source": {
+   "url": "https://decree.om/2011/rd20110012/",
+   "name": "Decree.om"
+  },
+  "verified": true
+ },
+ {
+  "id": "om-rd-6-2022",
+  "country": "OM",
+  "year": 2022,
+  "type": "law",
+  "title": {
+   "en": "Royal Decree No. 6/2022 issuing the Personal Data Protection Law",
+   "ar": "المرسوم السلطاني رقم 6/2022 بإصدار قانون حماية البيانات الشخصية"
+  },
+  "summary": {
+   "en": "Oman's data protection law, supervised by the Ministry of Transport, Communications and Information Technology. Its breach duty and the 72 hour rule in its executive regulation shape incident response.",
+   "ar": "هو قانون حماية البيانات في عُمان تحت إشراف وزارة النقل والاتصالات وتقنية المعلومات ويشكّل واجب الإبلاغ عن الاختراق فيه وقاعدة 72 ساعة في لائحته التنفيذية طريقة الاستجابة للحوادث."
+  },
+  "notes_en": [
+   "Issued 9 February 2022, published in Official Gazette No. 1429 on 13 February 2022, and set to take effect one year after issuance.",
+   "Article 19 requires the controller, when a breach leads to destruction, alteration, disclosure, access or unlawful processing of personal data, to notify the ministry and the data subject under the regulation's procedures.",
+   "The Executive Regulation (Ministerial Decision No. 34/2024) requires notice to the regulator within 72 hours, and to data subjects within 72 hours where serious harm or high risk is likely.",
+   "The transition period was extended by Ministerial Decision No. 6/2025 and ended on 5 February 2026."
+  ],
+  "caveat_en": "Article 19 and the decree details were checked on decree.om and qanoon.om. The article number of the 72 hour rule in the regulation was not confirmed.",
+  "source": {
+   "url": "https://cms.law/en/omn/legal-updates/oman-personal-data-protection-law-entering-the-enforcement-phase",
+   "name": "CMS legal update"
+  },
+  "verified": true
+ },
+ {
+  "id": "intl-iso-27037-2012",
+  "country": "INTL",
+  "year": 2012,
+  "type": "framework",
+  "title": {
+   "en": "ISO/IEC 27037:2012 Guidelines for identification, collection, acquisition and preservation of digital evidence",
+   "ar": "المعيار ISO/IEC 27037:2012 لإرشادات تحديد الأدلة الرقمية وجمعها والحصول عليها وحفظها"
+  },
+  "summary": {
+   "en": "The core international guideline for first responders handling potential digital evidence. Examiners cite it to show that seizure, imaging and preservation followed a recognised method.",
+   "ar": "هو الإرشاد الدولي الأساسي للمستجيبين الأوائل الذين يتعاملون مع أدلة رقمية محتملة ويستشهد به الفاحص ليبين أن الضبط والتصوير الجنائي والحفظ اتبعت منهجاً معترفاً به."
+  },
+  "notes_en": [
+   "Covers identification, collection, acquisition and preservation of potential digital evidence.",
+   "Addresses storage media, mobile phones and other personal devices, navigation systems, digital cameras including CCTV, networked computers and TCP/IP networks, as an indicative list.",
+   "Meant to support organisational disciplinary procedures and the exchange of potential evidence between jurisdictions.",
+   "Published October 2012, and ISO lists it as current after review."
+  ],
+  "caveat_en": "Pairs with ISO/IEC 27041, 27042 and 27043 for the later stages of an investigation.",
+  "source": {
+   "url": "https://www.iso.org/standard/44381.html",
+   "name": "ISO"
+  },
+  "verified": true
+ },
+ {
+  "id": "intl-iso-27041-27043-2015",
+  "country": "INTL",
+  "year": 2015,
+  "type": "framework",
+  "title": {
+   "en": "ISO/IEC 27041, 27042 and 27043:2015 on investigative methods, analysis of digital evidence and investigation processes",
+   "ar": "المعايير ISO/IEC 27041 و27042 و27043 لسنة 2015 بشأن أساليب التحقيق وتحليل الأدلة الرقمية وعمليات التحقيق"
+  },
+  "summary": {
+   "en": "Three companion standards to ISO/IEC 27037. They cover validating investigative methods, analysing and interpreting digital evidence, and the overall incident investigation process.",
+   "ar": "هي ثلاثة معايير مرافقة للمعيار ISO/IEC 27037 تغطي التحقق من صحة أساليب التحقيق وتحليل الأدلة الرقمية وتفسيرها وعملية التحقيق في الحوادث كاملة."
+  },
+  "notes_en": [
+   "ISO/IEC 27041:2015 guides assuring that investigative methods are fit for purpose, including validation and the use of vendor and third party testing.",
+   "ISO/IEC 27042:2015 covers analysis and interpretation of digital evidence so the work is continuous, valid, reproducible and repeatable, with enough records for independent review.",
+   "ISO/IEC 27043:2015 sets idealised models for incident investigation from pre-incident preparation to case closure.",
+   "ISO pages show systematic reviews in 2025 and 2026, so check for revisions before citing."
+  ],
+  "caveat_en": "Source URL is the 27042 page; 27041 is at iso.org/standard/44405.html and 27043 at iso.org/standard/44407.html.",
+  "source": {
+   "url": "https://www.iso.org/standard/44406.html",
+   "name": "ISO"
+  },
+  "verified": true
+ },
+ {
+  "id": "intl-nist-sp800-86-101r1",
+  "country": "INTL",
+  "year": 2006,
+  "type": "framework",
+  "title": {
+   "en": "NIST SP 800-86 (Guide to Integrating Forensic Techniques into Incident Response) and SP 800-101 Rev. 1 (Guidelines on Mobile Device Forensics)",
+   "ar": "دليلا NIST SP 800-86 لدمج تقنيات التحليل الجنائي في الاستجابة للحوادث وSP 800-101 Rev 1 لإرشادات التحليل الجنائي للأجهزة المحمولة"
+  },
+  "summary": {
+   "en": "Two widely cited NIST guides. SP 800-86 places forensics inside incident response, and SP 800-101 Rev. 1 covers recovering evidence from mobile devices under forensically sound conditions.",
+   "ar": "هما دليلان واسعا الاستشهاد إذ يضع SP 800-86 التحليل الجنائي داخل الاستجابة للحوادث ويغطي SP 800-101 Rev 1 استرجاع الأدلة من الأجهزة المحمولة في ظروف سليمة جنائياً."
+  },
+  "notes_en": [
+   "SP 800-86, published August 2006, describes a four phase process of collection, examination, analysis and reporting.",
+   "SP 800-86 takes an IT rather than a law enforcement view and advises consulting legal counsel before applying its practices.",
+   "SP 800-101 Rev. 1, published May 2014, defines mobile device forensics as recovering digital evidence from a mobile device under forensically sound conditions.",
+   "SP 800-101 Rev. 1 outlines how to validate, preserve, collect, examine, analyse and report mobile device data, and replaced the 2007 edition."
+  ],
+  "caveat_en": "SP 800-101 Rev. 1 page: csrc.nist.gov/pubs/sp/800/101/r1/final. Both are listed as final with no withdrawal notice.",
+  "source": {
+   "url": "https://csrc.nist.gov/pubs/sp/800/86/final",
+   "name": "NIST Computer Security Resource Center"
+  },
+  "verified": true
+ },
+ {
+  "id": "intl-swgde-best-practices",
+  "country": "INTL",
+  "year": 2025,
+  "type": "framework",
+  "title": {
+   "en": "SWGDE Best Practices for Computer Forensic Acquisition (17-F-002) and for Digital Evidence Collection (18-F-002)",
+   "ar": "أفضل ممارسات SWGDE للحصول الجنائي على بيانات الحاسوب (17-F-002) ولجمع الأدلة الرقمية (18-F-002)"
+  },
+  "summary": {
+   "en": "Practitioner best practice documents from the Scientific Working Group on Digital Evidence. They are often cited for acquisition and collection steps.",
+   "ar": "هي وثائق أفضل الممارسات العملية الصادرة عن مجموعة العمل العلمية للأدلة الرقمية ويُستشهد بها كثيراً في خطوات الحصول على الأدلة وجمعها."
+  },
+  "notes_en": [
+   "17-F-002 version 2.1 (5 August 2025) covers preparation, triage, physical, logical and live acquisition, forensic boot media, targeted collection, verification, documentation and preservation.",
+   "It is aimed at qualified personnel, is not a training manual and does not replace organisational policy.",
+   "It does not cover incident response, complex live acquisitions, complex disk arrays or hybrid storage devices.",
+   "18-F-002 covers collecting computers and other storage media, including preparation, scene search, documentation and storage, and leaves mobile devices to a separate SWGDE document."
+  ],
+  "caveat_en": "18-F-002 page: swgde.org/documents/published-complete-listing/18-f-002-swgde-best-practices-for-digital-evidence-collection/. The SWGDE listing shows a newer 18-F-002 version than that 2018 page, so cite the current version.",
+  "source": {
+   "url": "https://www.swgde.org/documents/published-complete-listing/17-f-002-2-1/",
+   "name": "SWGDE"
+  },
+  "verified": true
+ },
+ {
+  "id": "intl-budapest-2001",
+  "country": "INTL",
+  "year": 2001,
+  "type": "law",
+  "title": {
+   "en": "Council of Europe Convention on Cybercrime (Budapest Convention, ETS No. 185)",
+   "ar": "اتفاقية مجلس أوروبا بشأن الجريمة الإلكترونية المعروفة باتفاقية بودابست رقم 185 في سلسلة المعاهدات الأوروبية"
+  },
+  "summary": {
+   "en": "The main international treaty on cybercrime and electronic evidence. No GCC state is a party, signatory or invitee, which affects cross border evidence requests to and from the Gulf.",
+   "ar": "هي المعاهدة الدولية الرئيسية للجريمة الإلكترونية والدليل الإلكتروني وليست أي دولة خليجية طرفاً فيها ولا موقعة عليها ولا مدعوة إليها وهذا يؤثر في طلبات الأدلة العابرة للحدود من الخليج وإليه."
+  },
+  "notes_en": [
+   "Opened for signature in Budapest on 23 November 2001 and in force since 1 July 2004.",
+   "The Council of Europe lists 83 Parties and 14 states that have signed or been invited to accede.",
+   "Kuwait, Saudi Arabia, the UAE, Qatar, Bahrain and Oman do not appear in any of these categories.",
+   "The Council of Europe Octopus pages list Kuwait's and Bahrain's status as NA.",
+   "The Second Additional Protocol on enhanced cooperation (CETS No. 224) opened for signature on 12 May 2022."
+  ],
+  "caveat_en": "Dates come from the Council of Europe milestones page (coe.int/en/web/cybercrime/milestones1). Morocco and Tunisia are the only Arab League states in the Parties list.",
+  "source": {
+   "url": "https://www.coe.int/web/cybercrime/the-budapest-convention",
+   "name": "Council of Europe"
+  },
+  "verified": true
+ },
+ {
+  "id": "intl-arab-convention-2010",
+  "country": "INTL",
+  "year": 2010,
+  "type": "law",
+  "title": {
+   "en": "Arab Convention on Combating Information Technology Offences (2010)",
+   "ar": "الاتفاقية العربية لمكافحة جرائم تقنية المعلومات لسنة 2010"
+  },
+  "summary": {
+   "en": "The Arab League's cybercrime treaty and the regional counterpart to the Budapest Convention. Kuwait ratified it, and its procedural articles explain the preservation and search tools found in several Gulf laws.",
+   "ar": "هي معاهدة جامعة الدول العربية للجرائم الإلكترونية ونظيرة اتفاقية بودابست في المنطقة وقد صادقت عليها الكويت وتفسر موادها الإجرائية أدوات الحفظ والتفتيش الموجودة في عدد من القوانين الخليجية."
+  },
+  "notes_en": [
+   "Signed in Cairo on 21 December 2010, with ratifications deposited with the General Secretariat of the League of Arab States.",
+   "Chapter III covers expedited preservation of stored data (Article 23), expedited preservation and partial disclosure of traffic data (Article 24) and orders to submit information (Article 25).",
+   "It also covers search of stored information (Article 26), seizure of stored information (Article 27), expedited gathering of traffic data (Article 28) and interception of content (Article 29).",
+   "Kuwait ratified it by Law No. 60 of 2013, according to the explanatory memorandum of Law No. 63 of 2015."
+  ],
+  "caveat_en": "The ratification status of the other GCC states was not verified.",
+  "source": {
+   "url": "https://nsarchive.gwu.edu/sites/default/files/documents/5975835/National-Security-Archive-Arab-Convention-on.pdf",
+   "name": "National Security Archive (English translation of the Convention)"
+  },
+  "verified": true
+ }
+]

@@ -1,0 +1,41 @@
+{
+  "title": {"en": "How digital forensics works", "ar": "كيف يعمل التحقيق الجنائي الرقمي"},
+  "scenes": [
+    {
+      "frame": "01-traces",
+      "en": ["Every action on a device leaves a trace.", "A file opened, a message sent, a login at three in the morning: each one is written down somewhere."],
+      "ar": ["يترك كل فعلٍ على الجهاز أثراً", "فالملف الذي يُفتح والرسالة التي تُرسل وتسجيل الدخول في الثالثة فجراً كلها تُكتب في مكان ما."]
+    },
+    {
+      "frame": "02-tracker",
+      "en": ["Long before computers, Kuwait's trackers, the qassas al-athar, read footprints in the sand.", "From a single print they could tell who had passed, how fast, and how long ago."],
+      "ar": ["وقبل الحاسوب بزمن طويل كان قصّاصو الأثر في الكويت يقرؤون آثار الأقدام في الرمل", "فيعرفون من الأثر الواحد من مرّ وبأي سرعة ومنذ متى."]
+    },
+    {
+      "frame": "03-imaging",
+      "en": ["Digital forensics works the same way.", "It begins with preservation: the examiner never works on the original.", "A write blocker stops any change, and a bit for bit copy is taken."],
+      "ar": ["ويعمل التحقيق الجنائي الرقمي بالطريقة نفسها إذ يبدأ بالحفظ", "لأن الفاحص لا يعمل على الأصل أبداً بل يمنع مانع الكتابة أي تغيير", "ثم تُؤخذ نسخة مطابقة للأصل بتّاً ببتّ."]
+    },
+    {
+      "frame": "04-hash",
+      "en": ["Then comes verification. A cryptographic hash fingerprints the copy.", "If a single bit changes, the fingerprint changes, and the evidence can no longer be trusted."],
+      "ar": ["ثم يأتي التحقق فتُبصم النسخة ببصمة تشفيرية", "وإن تغيّر بتّ واحد تغيّرت البصمة ولم يعد الدليل موضع ثقة."]
+    },
+    {
+      "frame": "05-custody",
+      "en": ["Every handover is written into the chain of custody: who held the evidence, when, and why.", "Without it, nothing stands in court."],
+      "ar": ["وتُدوَّن كل عملية تسليم في سلسلة الحيازة فيُعرف من حاز الدليل ومتى ولماذا", "ومن دونها لا يصمد شيء أمام المحكمة."]
+    },
+    {
+      "frame": "06-timeline",
+      "clip": "06-timeline.mp4",
+      "en": ["Then the reading begins.", "File systems, memory, logs and network traffic are placed on one timeline,", "until the story of what happened appears in order."],
+      "ar": ["ثم تبدأ القراءة فتوضع أنظمة الملفات والذاكرة والسجلات", "وحركة الشبكة على خط زمني واحد", "حتى تظهر قصة ما حدث مرتّبة."]
+    },
+    {
+      "frame": "07-report",
+      "en": ["Finally, the report: clear, repeatable, and honest about its limits.", "Qassas teaches this craft, step by step, in Arabic and English."],
+      "ar": ["وفي الختام يُكتب التقرير واضحاً قابلاً للتكرار صادقاً في حدوده", "وهذا ما يعلّمه قصّاص خطوة بخطوة بالعربية والإنجليزية."]
+    }
+  ]
+}

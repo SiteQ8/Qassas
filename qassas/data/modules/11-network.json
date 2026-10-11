@@ -1,0 +1,58 @@
+{
+ "id": "network", "n": 11, "image": "10-network-beacon", "lab": null, "hours": 3,
+ "title": {"en": "Network forensics", "ar": "التحليل الجنائي للشبكات"},
+ "summary": {"en": "How to read a packet capture for lookups, encrypted connections, uploads and the regular heartbeat of malware calling home.",
+             "ar": "كيف تقرأ التقاط الحزم بحثاً عن استعلامات الأسماء والاتصالات المشفرة وعمليات الرفع والنبض المنتظم للبرمجية الخبيثة وهي تتصل بخادمها."},
+ "objectives": [
+  {"en": "Extract DNS lookups and TLS server names", "ar": "استخراج استعلامات DNS وأسماء خوادم TLS"},
+  {"en": "Detect beaconing from timing alone", "ar": "كشف الاتصال الدوري من التوقيت وحده"},
+  {"en": "Recover a file sent over clear HTTP", "ar": "استرجاع ملف أُرسل عبر HTTP غير مشفر"}
+ ],
+ "lesson": [
+  {"en": "Even when content is encrypted, the capture shows who talked to whom, when, for how long and how much they sent.",
+   "ar": "حتى حين يكون المحتوى مشفراً يُظهر الالتقاط من تحدث مع من ومتى وكم دام الاتصال وكم أُرسل."},
+  {"en": "DNS lookups and the server name in each TLS handshake travel in clear text, so they reveal the sites a machine visited.",
+   "ar": "وتنتقل استعلامات DNS واسم الخادم في كل مصافحة TLS نصاً واضحاً فتكشف المواقع التي زارها الجهاز."},
+  {"en": "Malware checks in with its command server on a timer, like a lantern flashing in the desert at a steady beat. Gaps that barely vary give it away.",
+   "ar": "وتتصل البرمجية الخبيثة بخادم التحكم وفق مؤقت كفانوس يومض في الصحراء بإيقاع ثابت والفواصل التي لا تكاد تتغير هي ما يفضحها."},
+  {"en": "A large POST to an unfamiliar host, especially right after a sensitive file was opened, is the classic sign of exfiltration.",
+   "ar": "والطلب الكبير من نوع POST إلى خادم غير مألوف لا سيما بعد فتح ملف حساس مباشرة هو العلامة التقليدية لتسريب البيانات."}
+ ],
+ "steps": [
+  {"en": "Hash the capture before opening it", "ar": "احسب بصمة الالتقاط قبل فتحه"},
+  {"en": "List conversations by bytes", "ar": "رتّب المحادثات حسب حجم البيانات"},
+  {"en": "Extract DNS names and TLS server names", "ar": "استخرج أسماء DNS وأسماء خوادم TLS"},
+  {"en": "Measure the timing of repeated connections", "ar": "قِس توقيت الاتصالات المتكررة"},
+  {"en": "Carve files from clear text sessions", "ar": "انحت الملفات من الجلسات غير المشفرة"}
+ ],
+ "pitfalls": [
+  {"en": "Ignoring encrypted traffic because the content cannot be read, when timing and names still tell the story.",
+   "ar": "تجاهل الحركة المشفرة لأن محتواها لا يُقرأ مع أن التوقيت والأسماء ما زالت تروي القصة."},
+  {"en": "Capturing on the wrong switch port and missing the suspect machine's traffic.",
+   "ar": "الالتقاط من منفذ خاطئ في المحوّل وتفويت حركة الجهاز المشتبه به."}
+ ],
+ "kuwait": {"en": "Interception of communications in Kuwait falls under Law No. 37 of 2014 and Law No. 9 of 2001, so capture on networks you own or under a clear legal basis.",
+            "ar": "يخضع اعتراض الاتصالات في الكويت للقانون رقم 37 لسنة 2014 والقانون رقم 9 لسنة 2001 لذا التقط الحركة على الشبكات التي تملكها أو بسند قانوني واضح."},
+ "law_refs": ["kw-law-37-2014", "kw-law-9-2001", "bh-law-60-2014"],
+ "tools": ["wireshark", "zeek", "suricata"],
+ "terms": ["pcap", "beaconing", "c2", "sni", "ioc"],
+ "commands": ["qassas pcap qassas-case-01/evidence/Network/capture.pcap"],
+ "quiz": [
+  {"q": {"en": "Connections to one host happen every 60 seconds with almost no variation. What does that suggest", "ar": "تحدث اتصالات بخادم واحد كل 60 ثانية دون تغيّر يُذكر فعلامَ يدل ذلك"},
+   "options": [{"en": "A person browsing", "ar": "شخص يتصفح"},
+               {"en": "Automated beaconing to a command server", "ar": "اتصال دوري آلي بخادم تحكم"},
+               {"en": "A slow network", "ar": "شبكة بطيئة"},
+               {"en": "A printer", "ar": "طابعة"}],
+   "answer": 1,
+   "why": {"en": "People are irregular. A steady timer points to software, and unknown software calling out on a timer is a classic command channel.",
+           "ar": "سلوك البشر غير منتظم أما المؤقت الثابت فيشير إلى برنامج والبرنامج المجهول الذي يتصل وفق مؤقت هو قناة تحكم تقليدية."}},
+  {"q": {"en": "What can you still learn from an encrypted TLS session", "ar": "ما الذي يمكن معرفته من جلسة TLS مشفرة"},
+   "options": [{"en": "Nothing at all", "ar": "لا شيء إطلاقاً"},
+               {"en": "The full page content", "ar": "محتوى الصفحة كاملاً"},
+               {"en": "The server name, timing and amount of data", "ar": "اسم الخادم والتوقيت وحجم البيانات"},
+               {"en": "The user's password", "ar": "كلمة مرور المستخدم"}],
+   "answer": 2,
+   "why": {"en": "The handshake carries the server name in clear text, and packet times and sizes are always visible.",
+           "ar": "تحمل المصافحة اسم الخادم نصاً واضحاً وتبقى أوقات الحزم وأحجامها ظاهرة دائماً."}}
+ ]
+}

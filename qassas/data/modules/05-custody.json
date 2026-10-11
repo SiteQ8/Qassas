@@ -1,0 +1,58 @@
+{
+ "id": "custody", "n": 5, "image": "05-custody-handover", "lab": "custody", "hours": 2,
+ "title": {"en": "Chain of custody", "ar": "سلسلة الحيازة"},
+ "summary": {"en": "How to record every handover so the evidence can be traced from seizure to court, and how a hash chain exposes a quietly edited log.",
+             "ar": "كيف تسجّل كل عملية تسليم بحيث يُتتبع الدليل من الضبط حتى المحكمة وكيف تكشف سلسلة البصمات أي تعديل خفي في السجل."},
+ "objectives": [
+  {"en": "Write a complete custody entry", "ar": "كتابة قيد حيازة كامل"},
+  {"en": "Explain why each entry carries the hash of the one before", "ar": "شرح سبب حمل كل قيد بصمة القيد الذي قبله"},
+  {"en": "Find the exact entry that was altered", "ar": "تحديد القيد المعدّل بالضبط"}
+ ],
+ "lesson": [
+  {"en": "A custody record answers four questions for every moment of an item's life: who had it, when, where and what they did with it.",
+   "ar": "يجيب سجل الحيازة عن أربعة أسئلة في كل لحظة من حياة الدليل هي من حازه ومتى وأين وماذا فعل به."},
+  {"en": "A gap or a wrong time gives the defence a reason to argue the evidence could have been changed, even when it was not.",
+   "ar": "والفجوة أو الوقت الخاطئ يمنحان الدفاع سبباً للقول إن الدليل ربما تغيّر حتى لو لم يتغير."},
+  {"en": "Qassas writes the log as a hash chain: each entry stores the SHA-256 of the previous entry, and its own hash covers all its fields.",
+   "ar": "ويكتب قصّاص السجل سلسلةً من البصمات فيحفظ كل قيد بصمة SHA-256 للقيد الذي قبله وتغطي بصمته الخاصة كل حقوله."},
+  {"en": "Changing any field later breaks that entry's hash, and deleting an entry breaks the link of the next one, so the verifier names the exact place.",
+   "ar": "فإن تغيّر أي حقل لاحقاً انكسرت بصمة ذلك القيد وإن حُذف قيد انكسر ارتباط القيد الذي يليه فيحدد المدقق الموضع بالضبط."}
+ ],
+ "steps": [
+  {"en": "Open a log the moment the item is seized", "ar": "افتح السجل لحظة ضبط الدليل"},
+  {"en": "Record every handover with both names", "ar": "سجّل كل تسليم باسمي الطرفين"},
+  {"en": "Write seal numbers when sealing and opening", "ar": "اكتب أرقام الأختام عند الختم والفتح"},
+  {"en": "Add the image hash at acquisition", "ar": "أضف بصمة الصورة عند الحصول عليها"},
+  {"en": "Verify the chain before you testify", "ar": "تحقق من السلسلة قبل أن تشهد"}
+ ],
+ "pitfalls": [
+  {"en": "Fixing a typo in an old entry instead of adding a new correcting entry, which makes the log look tampered with.",
+   "ar": "تصحيح خطأ إملائي في قيد قديم بدلاً من إضافة قيد تصحيحي جديد وهذا يجعل السجل يبدو معبوثاً به."},
+  {"en": "Keeping the log in a spreadsheet anyone can edit without a trace.",
+   "ar": "حفظ السجل في جدول بيانات يستطيع أي شخص تعديله دون أن يترك أثراً."}
+ ],
+ "kuwait": {"en": "The Central Bank of Kuwait's framework names chain of custody among its forensic requirements for regulated institutions.",
+            "ar": "يذكر إطار بنك الكويت المركزي سلسلة الحيازة ضمن متطلباته الجنائية للمؤسسات الخاضعة لرقابته."},
+ "law_refs": ["kw-cbk-corf-2025", "kw-law-17-1960", "intl-iso-27037-2012"],
+ "tools": ["cyberchef"],
+ "terms": ["chain-of-custody", "evidence-bag", "hash"],
+ "commands": ["qassas custody verify qassas-case-01/custody/custody.jsonl", "qassas custody verify qassas-case-01/custody/custody_archive_copy.jsonl"],
+ "quiz": [
+  {"q": {"en": "Someone edits the time in entry 5 of a hash chained log. Which entry fails", "ar": "عدّل شخص الوقت في القيد 5 من سجل مسلسل بالبصمات فأي قيد يفشل"},
+   "options": [{"en": "Entry 1", "ar": "القيد 1"},
+               {"en": "Entry 5", "ar": "القيد 5"},
+               {"en": "Every entry", "ar": "كل القيود"},
+               {"en": "None", "ar": "لا شيء"}],
+   "answer": 1,
+   "why": {"en": "Entry 5's stored hash no longer matches its content. The next entry still points to the old stored hash, so the break is located at entry 5.",
+           "ar": "لم تعد البصمة المخزنة في القيد 5 تطابق محتواه أما القيد التالي فما زال يشير إلى البصمة القديمة المخزنة فيتحدد الكسر في القيد 5."}},
+  {"q": {"en": "What is the right way to correct a mistake in a custody log", "ar": "ما الطريقة الصحيحة لتصحيح خطأ في سجل الحيازة"},
+   "options": [{"en": "Edit the old entry", "ar": "عدّل القيد القديم"},
+               {"en": "Delete the log and start again", "ar": "احذف السجل وابدأ من جديد"},
+               {"en": "Add a new entry that explains the correction", "ar": "أضف قيداً جديداً يشرح التصحيح"},
+               {"en": "Ignore it", "ar": "تجاهله"}],
+   "answer": 2,
+   "why": {"en": "Logs are append only. A new entry keeps the history honest and the chain intact.",
+           "ar": "السجلات تُضاف إليها القيود ولا تُعدّل والقيد الجديد يحفظ صدق التاريخ وسلامة السلسلة."}}
+ ]
+}

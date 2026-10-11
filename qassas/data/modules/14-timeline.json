@@ -1,0 +1,54 @@
+{
+ "id": "timeline", "n": 14, "image": "08-timeline-stakes", "lab": "timeline", "hours": 3,
+ "title": {"en": "Building the timeline", "ar": "بناء الخط الزمني"},
+ "summary": {"en": "How to merge every source onto one timeline in UTC and read it back in Kuwait time to tell the story in order.",
+             "ar": "كيف تدمج كل المصادر في خط زمني واحد بالتوقيت العالمي ثم تقرؤه بتوقيت الكويت لتروي القصة بترتيبها."},
+ "objectives": [
+  {"en": "Normalise every timestamp format to UTC", "ar": "توحيد كل صيغ الطوابع الزمنية إلى UTC"},
+  {"en": "Merge sources into one sorted timeline", "ar": "دمج المصادر في خط زمني واحد مرتب"},
+  {"en": "Find the pivot point of an incident", "ar": "تحديد نقطة التحول في الحادثة"}
+ ],
+ "lesson": [
+  {"en": "Each source speaks its own clock: FILETIME in shortcuts, WebKit time in Chromium, local time in syslog, epoch seconds in captures and local time in EXIF.",
+   "ar": "لكل مصدر ساعته الخاصة ففي الاختصارات FILETIME وفي Chromium وقت WebKit وفي Syslog الوقت المحلي وفي الالتقاطات ثوانٍ منذ بداية Unix وفي EXIF الوقت المحلي."},
+  {"en": "Convert everything to UTC first, sort, and only then display in Kuwait time, UTC+03:00. Mixing zones is the most common timeline mistake.",
+   "ar": "حوّل كل شيء إلى UTC أولاً ثم رتّبه ثم اعرضه بعد ذلك بتوقيت الكويت UTC+03:00 لأن خلط المناطق الزمنية هو أشهر أخطاء الخط الزمني."},
+  {"en": "Like survey stakes planted across the sand, each event marks one point. Read them in order and the path of the incident appears.",
+   "ar": "وكل حدث يشبه وتداً مغروساً في الرمل يعلّم نقطة واحدة فإن قرأت الأوتاد بترتيبها ظهر مسار الحادثة."},
+  {"en": "Look for the pivot, the moment everything changes: the click, the download or the first login from a new address, then work outward from it.",
+   "ar": "وابحث عن نقطة التحول وهي اللحظة التي تغيّر فيها كل شيء كالنقرة أو التنزيل أو أول دخول من عنوان جديد ثم انطلق منها إلى ما قبلها وما بعدها."}
+ ],
+ "steps": [
+  {"en": "Parse each source with its own time format", "ar": "حلّل كل مصدر بصيغة وقته الخاصة"},
+  {"en": "Convert every event to UTC", "ar": "حوّل كل حدث إلى UTC"},
+  {"en": "Sort and merge", "ar": "رتّب الأحداث وادمجها"},
+  {"en": "Display in Kuwait time and mark the pivot", "ar": "اعرضها بتوقيت الكويت وعلّم نقطة التحول"}
+ ],
+ "pitfalls": [
+  {"en": "Mixing local and UTC times on one timeline, which reverses the order of close events.",
+   "ar": "خلط الأوقات المحلية والعالمية في خط زمني واحد وهذا يعكس ترتيب الأحداث المتقاربة."},
+  {"en": "Ignoring clock drift on a server whose clock was wrong.",
+   "ar": "تجاهل انحراف الساعة في خادم كانت ساعته خاطئة."}
+ ],
+ "kuwait": {"en": "Kuwait has no daylight saving time, so UTC+03:00 holds every day of the year, unlike timelines that cross a European or American clock change.",
+            "ar": "لا تعمل الكويت بالتوقيت الصيفي فيبقى UTC+03:00 ثابتاً كل أيام السنة بخلاف الخطوط الزمنية التي تعبر تغيير الساعة في أوروبا أو أمريكا."},
+ "law_refs": ["kw-cbk-corf-2025", "intl-iso-27041-27043-2015"],
+ "tools": ["plaso", "timesketch", "sleuthkit"],
+ "terms": ["timestamp", "macb", "super-timeline", "utc"],
+ "commands": ["qassas timeline qassas-case-01 --tz kuwait"],
+ "quiz": [
+  {"q": {"en": "What should you do first when merging times from many sources", "ar": "ما أول ما تفعله عند دمج أوقات من مصادر كثيرة"},
+   "options": [{"en": "Show them in Kuwait time", "ar": "عرضها بتوقيت الكويت"},
+               {"en": "Convert them all to UTC", "ar": "تحويلها كلها إلى UTC"},
+               {"en": "Round them to the nearest hour", "ar": "تقريبها إلى أقرب ساعة"},
+               {"en": "Remove the ones without seconds", "ar": "حذف ما لا يحمل ثوانيَ"}],
+   "answer": 1,
+   "why": {"en": "A single reference zone makes sorting correct. Display is a separate, later step.",
+           "ar": "توحيد المنطقة المرجعية يجعل الترتيب صحيحاً أما العرض فخطوة منفصلة لاحقة."}},
+  {"q": {"en": "Kuwait time on 4 October is 09:15. What is it in UTC", "ar": "الوقت في الكويت يوم 4 أكتوبر هو 09:15 فكم يكون بالتوقيت العالمي"},
+   "options": [{"en": "06:15", "ar": "06:15"}, {"en": "05:15", "ar": "05:15"}, {"en": "12:15", "ar": "12:15"}, {"en": "09:15", "ar": "09:15"}],
+   "answer": 0,
+   "why": {"en": "Kuwait is UTC+03:00 all year, so subtract three hours.",
+           "ar": "توقيت الكويت هو UTC+03:00 طوال العام لذا اطرح ثلاث ساعات."}}
+ ]
+}

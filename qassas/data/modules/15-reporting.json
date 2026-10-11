@@ -1,0 +1,57 @@
+{
+ "id": "reporting", "n": 15, "image": "poster-07-report", "lab": "case", "hours": 3,
+ "title": {"en": "The report and the case", "ar": "التقرير والقضية"},
+ "summary": {"en": "How to write findings a judge can follow and another examiner can repeat, then solve the full Sanbouk practice case.",
+             "ar": "كيف تكتب نتائج يتابعها القاضي ويكررها فاحص آخر ثم تحل قضية السنبوك التدريبية كاملة."},
+ "objectives": [
+  {"en": "Structure an examination report", "ar": "بناء تقرير الفحص"},
+  {"en": "Separate facts from interpretation", "ar": "الفصل بين الوقائع والتفسير"},
+  {"en": "Solve the practice case end to end", "ar": "حل القضية التدريبية من أولها إلى آخرها"}
+ ],
+ "lesson": [
+  {"en": "A report states what was received, how its integrity was checked, which tools and versions were used, what was found, and what it means, in that order.",
+   "ar": "يذكر التقرير ما استُلم وكيف تُحقق من سلامته وما الأدوات وإصداراتها المستخدمة وما وُجد وما معناه بهذا الترتيب."},
+  {"en": "Every finding points to its source file and location, so a reader can go and look for themselves.",
+   "ar": "وتشير كل نتيجة إلى ملفها المصدر وموضعها فيه ليستطيع القارئ أن يذهب ويرى بنفسه."},
+  {"en": "Keep facts and opinions apart. The log shows a login from an address, and it is your interpretation that the address belongs to the attacker.",
+   "ar": "وافصل بين الوقائع والآراء فالسجل يُظهر دخولاً من عنوان ما أما أن العنوان يعود إلى المهاجم فهو تفسيرك."},
+  {"en": "Say what you could not determine and why. Honest limits make the rest of the report more credible.",
+   "ar": "واذكر ما لم تستطع تحديده وسبب ذلك لأن الإقرار الصادق بالحدود يزيد بقية التقرير مصداقية."}
+ ],
+ "steps": [
+  {"en": "Describe the evidence and its integrity checks", "ar": "صِف الأدلة وفحوص سلامتها"},
+  {"en": "List tools with their versions", "ar": "اذكر الأدوات مع إصداراتها"},
+  {"en": "Present findings in time order with sources", "ar": "اعرض النتائج بترتيبها الزمني مع مصادرها"},
+  {"en": "State conclusions and limits plainly", "ar": "اذكر الخلاصات والحدود بوضوح"}
+ ],
+ "pitfalls": [
+  {"en": "Writing for other examiners in jargon a judge cannot follow.",
+   "ar": "الكتابة لفاحصين آخرين بمصطلحات لا يتابعها القاضي."},
+  {"en": "Stating a conclusion more strongly than the evidence supports.",
+   "ar": "صياغة الخلاصة بقوة تفوق ما تدعمه الأدلة."}
+ ],
+ "kuwait": {"en": "The Court of Cassation keeps the final word on expert findings, so a clear, sourced and honest report is what persuades it.",
+            "ar": "تحتفظ محكمة التمييز بالكلمة الأخيرة في نتائج الخبراء لذا فالتقرير الواضح الموثق الصادق هو ما يقنعها."},
+ "law_refs": ["kw-cassation-536-2003", "kw-law-17-1960", "intl-iso-27041-27043-2015"],
+ "tools": ["autopsy", "timesketch"],
+ "terms": ["expert-report", "repeatability", "anti-forensics"],
+ "commands": ["qassas report qassas-case-01 --lang ar --out report-ar.md", "qassas lab check --questions qassas-case-01/questions.json --answers answers.json"],
+ "quiz": [
+  {"q": {"en": "Which sentence is a fact rather than an interpretation", "ar": "أي جملة واقعة لا تفسير"},
+   "options": [{"en": "The attacker stole the tender", "ar": "سرق المهاجم المناقصة"},
+               {"en": "At 09:15 the laptop posted 1487 bytes to updates.sanbouk-cdn.example", "ar": "في الساعة 09:15 أرسل الحاسوب 1487 بايت إلى updates.sanbouk-cdn.example"},
+               {"en": "Fahad helped the attacker", "ar": "ساعد فهد المهاجم"},
+               {"en": "The company was careless", "ar": "كانت الشركة مهملة"}],
+   "answer": 1,
+   "why": {"en": "It states what the capture shows, with time, size and destination, and leaves the meaning to the analysis section.",
+           "ar": "تذكر ما يُظهره الالتقاط بالوقت والحجم والوجهة وتترك المعنى لقسم التحليل."}},
+  {"q": {"en": "Why list the tool versions in a report", "ar": "لماذا تُذكر إصدارات الأدوات في التقرير"},
+   "options": [{"en": "To advertise the tools", "ar": "للإعلان عن الأدوات"},
+               {"en": "So another examiner can repeat the work", "ar": "ليتمكن فاحص آخر من تكرار العمل"},
+               {"en": "It is a formality with no purpose", "ar": "إجراء شكلي بلا غرض"},
+               {"en": "To make the report longer", "ar": "لإطالة التقرير"}],
+   "answer": 1,
+   "why": {"en": "Different versions can parse differently, so repeating the work needs the same tools.",
+           "ar": "قد تحلل الإصدارات المختلفة البيانات بطرق مختلفة لذا يحتاج تكرار العمل إلى الأدوات نفسها."}}
+ ]
+}

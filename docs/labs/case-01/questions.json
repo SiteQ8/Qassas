@@ -1,0 +1,216 @@
+{
+  "id": "case-01",
+  "ref": "QS-2026-001",
+  "title": {
+    "en": "The Sanbouk tender leak",
+    "ar": "تسريب مناقصة السنبوك"
+  },
+  "synthetic": {
+    "en": "Everything in this case is invented for teaching. The company, people, domains and addresses are fictional, domains end in .example and IP addresses come from the documentation ranges.",
+    "ar": "كل ما في هذه القضية مختلق لأغراض التعليم فالشركة والأشخاص والنطاقات والعناوين خيالية وتنتهي النطاقات بـ .example وتأتي عناوين IP من النطاقات المخصصة للتوثيق."
+  },
+  "brief": [
+    {
+      "en": "Dar Al Sanbouk Trading, a fictional company in Sharq, lost the final pricing of its 2026 tender to a competitor on 4 October 2026.",
+      "ar": "خسرت شركة دار السنبوك للتجارة وهي شركة خيالية في شرق التسعيرة النهائية لمناقصة 2026 لصالح منافس في 4 أكتوبر 2026."
+    },
+    {
+      "en": "That morning the procurement officer Fahad received an email asking him to reset his tender portal password, and soon after the IT team saw a new service on his laptop.",
+      "ar": "وفي صباح ذلك اليوم وصلت إلى مسؤول المشتريات فهد رسالة تطلب منه إعادة تعيين كلمة مرور بوابة المناقصات ثم لاحظ فريق تقنية المعلومات بعد قليل خدمة جديدة على حاسوبه."
+    },
+    {
+      "en": "The incident responder Noura seized the laptop, and the forensic examiner Yousef imaged its drive and collected logs from the file server and a capture from the office network.",
+      "ar": "فتحفّظت المستجيبة للحوادث نورة على الحاسوب ثم أخذ الفاحص الجنائي يوسف صورة جنائية لقرصه وجمع سجلات خادم الملفات والتقاطاً لحركة شبكة المكتب."
+    },
+    {
+      "en": "Your task is to reconstruct what happened, in order, and to prove each step from the evidence.",
+      "ar": "ومهمتك أن تعيد بناء ما حدث بترتيبه وأن تثبت كل خطوة من الأدلة."
+    }
+  ],
+  "evidence": [
+    {
+      "path": "evidence/laptop.img",
+      "en": "Raw image of unallocated space from the laptop drive",
+      "ar": "صورة خام للمساحة غير المخصصة من قرص الحاسوب"
+    },
+    {
+      "path": "evidence/Documents/",
+      "en": "Documents folder from the user profile",
+      "ar": "مجلد المستندات من ملف المستخدم"
+    },
+    {
+      "path": "evidence/Pictures/",
+      "en": "Pictures folder from the user profile",
+      "ar": "مجلد الصور من ملف المستخدم"
+    },
+    {
+      "path": "evidence/Recent/",
+      "en": "Recent items shortcuts",
+      "ar": "اختصارات العناصر المفتوحة مؤخراً"
+    },
+    {
+      "path": "evidence/Browser/History",
+      "en": "Chromium browser history database",
+      "ar": "قاعدة بيانات سجل متصفح Chromium"
+    },
+    {
+      "path": "evidence/Logs/",
+      "en": "File server SSH log and laptop security events",
+      "ar": "سجل SSH لخادم الملفات وأحداث الأمان في الحاسوب"
+    },
+    {
+      "path": "evidence/Network/capture.pcap",
+      "en": "Office network capture from the laptop port",
+      "ar": "التقاط لحركة شبكة المكتب من منفذ الحاسوب"
+    },
+    {
+      "path": "custody/",
+      "en": "Chain of custody log and an archived copy",
+      "ar": "سجل سلسلة الحيازة ونسخة مؤرشفة منه"
+    },
+    {
+      "path": "manifest.json",
+      "en": "Hashes of every evidence file at acquisition",
+      "ar": "بصمات كل ملفات الأدلة لحظة الحصول عليها"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q01",
+      "module": "acquisition",
+      "command": "qassas hash evidence/laptop.img",
+      "en": "What is the SHA-256 of laptop.img, and does it match the custody log?",
+      "ar": "ما بصمة SHA-256 للملف laptop.img وهل تطابق سجل الحيازة؟",
+      "answer_sha256": [
+        "7c3af5c945b3a299c074b6b233a7e8c79789582fb6002c33961b4ccfa2792411"
+      ]
+    },
+    {
+      "id": "q02",
+      "module": "filesystems",
+      "command": "qassas identify evidence --recursive",
+      "en": "Which file in the evidence has a name that lies about its type?",
+      "ar": "أي ملف في الأدلة يكذب اسمه بشأن نوعه؟",
+      "answer_sha256": [
+        "8302cb886d44515f4e82612e293f26c90dc0658c60de5a32b767ae15cfd2cb3a",
+        "d5896727c6b5faa2698707aa65b2dfa4c11bcdd4de5aa9dbbec0204dc0b49ed7"
+      ]
+    },
+    {
+      "id": "q03",
+      "module": "metadata",
+      "command": "qassas carve evidence/laptop.img out && qassas meta out/<file>",
+      "en": "A deleted photo survives in laptop.img. In which area of Kuwait was it taken?",
+      "ar": "توجد صورة محذوفة في laptop.img فما المنطقة في الكويت التي التُقطت فيها؟",
+      "answer_sha256": [
+        "1743a7be5c6ca12c8cdb31be54acc56193857cb1ba948c9b3f02b15cea15fde2",
+        "2f8097e320fbc3c8a1d8aa5b0727ee74d6fdc41b1c3c9580e26ea9fff712bd83",
+        "41b5c354140569e325b2215d21024cb59dbeed90762151e3bd88d32212f3edad",
+        "53cfb329a68bf278a88fd6d1773a40ef43c1790719f0df53f7b1a01950dbcf83",
+        "80a178b8abb18ff175709de651b3086df185a07918bdc026365f19550179007f",
+        "971040efefc0aea98c98ff247ef40e8484ead2a29f558057a0115ce8f3d4f784"
+      ]
+    },
+    {
+      "id": "q04",
+      "module": "browser",
+      "command": "qassas browser evidence/Browser/History",
+      "en": "Which phishing domain did Fahad visit before the download?",
+      "ar": "ما نطاق التصيد الذي زاره فهد قبل التنزيل؟",
+      "answer_sha256": [
+        "a658c44ad245065df8eb9165b0f31b1bae366ec9974f00e17e8913fbbc8218d4"
+      ]
+    },
+    {
+      "id": "q05",
+      "module": "logs",
+      "command": "qassas logs evidence/Logs/srv-files_auth.log --year 2026",
+      "en": "At what time, Kuwait time (HH:MM), did the attacker first log in to the file server?",
+      "ar": "في أي ساعة ودقيقة بتوقيت الكويت دخل المهاجم إلى خادم الملفات أول مرة؟",
+      "answer_sha256": [
+        "1e758416c0a85fca47bd8b6d73548eea4d4712c8dc07851447d943c33bdec95f",
+        "66bbb0f993941c3ca0b30948678b566b7183d41c5058270fead130fa054d7a31",
+        "81bbc545e25a94e0b045a20f7f52a72612ac7d61008d31c5fb40f9756f851fb6",
+        "eeaba751269a4ee3055454cd2c8b9b746c6b9561f3573bb02eb4cb57fa0468f5"
+      ]
+    },
+    {
+      "id": "q06",
+      "module": "network",
+      "command": "qassas pcap evidence/Network/capture.pcap",
+      "en": "How many seconds apart are the laptop's check ins with its command server?",
+      "ar": "كم ثانية تفصل بين اتصالات الحاسوب الدورية بخادم التحكم؟",
+      "answer_sha256": [
+        "26821d222133a3104d49d6c4c1463a40494549e0cbc00de5b7fe64e776d06ed5",
+        "c3e788ae463682ef3ad198620d5f8459cade17d8bd6d86a26c645dc48982e689",
+        "c69aca9d3976bc8e1273e2240baca1a2c15c662e7a7837bc508de8610058c444",
+        "e86271e9a04d7cb11e87bf63bbf78b8542a0d2f4f066f9a27ceab8816a431235"
+      ]
+    },
+    {
+      "id": "q07",
+      "module": "custody",
+      "command": "qassas custody verify custody/custody_archive_copy.jsonl",
+      "en": "Which entry number in the archived custody copy was altered?",
+      "ar": "ما رقم القيد المعدّل في النسخة المؤرشفة من سجل الحيازة؟",
+      "answer_sha256": [
+        "3492cf4862d82e48337f6c6a9e53624405e4079a75511e6df03824a0363da2b0",
+        "98fa80f2ba9c28d1b3cf7ed6a03527b09be57a6ae18dbfb12de9aa8644893f1e",
+        "c544d79840b805ee43696b84f34a7c28a665859180dab5798ca15fdbe05b6055",
+        "f69e2c9c451e4cbee52fbda6d1a79ccc4ee715bbbe4486925135a3fb63138d8e"
+      ]
+    },
+    {
+      "id": "q08",
+      "module": "filesystems",
+      "command": "qassas carve evidence/laptop.img out",
+      "en": "How many JPEG images can be carved from laptop.img?",
+      "ar": "كم صورة JPEG يمكن استخراجها بالنحت من laptop.img؟",
+      "answer_sha256": [
+        "835ce2662c6401f750688f53f558a02aa1f5b89ce44894215ee928f5f329ac70",
+        "f6689dbe5df114ef084422767eb0a500006d03f4276f5c680e5762b96b88bdd7"
+      ]
+    },
+    {
+      "id": "q09",
+      "module": "windows",
+      "command": "qassas lnk evidence/Recent/Tender_Update.lnk",
+      "en": "What full path does the shortcut in the Recent folder point to?",
+      "ar": "ما المسار الكامل الذي يشير إليه الاختصار في مجلد العناصر الأخيرة؟",
+      "answer_sha256": [
+        "d79097f1ad8cdaeb7d1cecafc9133ffef5fbc261d1770c2927c4b564b8b3dc8f"
+      ]
+    },
+    {
+      "id": "q10",
+      "module": "metadata",
+      "command": "qassas meta evidence/Documents/Tender_2026_Final.pdf",
+      "en": "How many saved revisions does the tender PDF contain?",
+      "ar": "كم نسخة محفوظة يحتوي ملف المناقصة بصيغة PDF؟",
+      "answer_sha256": [
+        "0f5cfaf5901f0a97c9ba5bee4b0bc4910b50704b09aecf7eaca4aa0f4348421f",
+        "24fb01d8f77b5bf8ddb6459b9ec73155a0bd4d76b91c53d30c9c8e0295a194e5"
+      ]
+    },
+    {
+      "id": "q11",
+      "module": "logs",
+      "command": "qassas logs evidence/Logs/LAPTOP-FHD01_security.jsonl",
+      "en": "What is the name of the service installed on the laptop?",
+      "ar": "ما اسم الخدمة التي ثُبّتت على الحاسوب؟",
+      "answer_sha256": [
+        "e547efb6120359332e1331c828b80578e585d0252acca742e622ef01b1aee594"
+      ]
+    },
+    {
+      "id": "q12",
+      "module": "network",
+      "command": "qassas pcap evidence/Network/capture.pcap",
+      "en": "How many times did the laptop check in with the command server in the capture?",
+      "ar": "كم مرة اتصل الحاسوب بخادم التحكم في الالتقاط؟",
+      "answer_sha256": [
+        "3627e1d6817f85f13bb1fc3ed874556710b77f496e18d3793015a6e7efa8382b"
+      ]
+    }
+  ]
+}

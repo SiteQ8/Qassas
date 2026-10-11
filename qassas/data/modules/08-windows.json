@@ -1,0 +1,54 @@
+{
+ "id": "windows", "n": 8, "image": "12-malware-tracks", "lab": null, "hours": 3,
+ "title": {"en": "Windows artifacts", "ar": "آثار Windows"},
+ "summary": {"en": "The places Windows records what a user opened, ran and plugged in: shortcuts, prefetch, the registry and the event logs.",
+             "ar": "الأماكن التي يسجّل فيها Windows ما فتحه المستخدم وما شغّله وما وصّله وهي الاختصارات وملفات Prefetch والسجل وسجلات الأحداث."},
+ "objectives": [
+  {"en": "Prove a user opened a file with an LNK shortcut", "ar": "إثبات فتح المستخدم ملفاً باختصار LNK"},
+  {"en": "Show that a program ran and when", "ar": "إثبات تشغيل برنامج ووقته"},
+  {"en": "Find USB devices and persistence in the registry", "ar": "العثور على أجهزة USB وآليات البقاء في السجل"}
+ ],
+ "lesson": [
+  {"en": "When a user opens a file, Windows writes a shortcut in the Recent folder with the target's path, size, volume and times, and keeps it after the file is deleted.",
+   "ar": "حين يفتح المستخدم ملفاً يكتب Windows اختصاراً في مجلد العناصر الأخيرة يحمل مسار الهدف وحجمه ووحدة التخزين وأوقاته ويحتفظ به بعد حذف الملف."},
+  {"en": "Prefetch files show that a program ran, how many times and its last run times, which helps date malware execution.",
+   "ar": "وتبين ملفات Prefetch أن برنامجاً عمل وعدد مرات تشغيله وآخر أوقات تشغيله وهذا يساعد على تأريخ تشغيل البرمجية الخبيثة."},
+  {"en": "The registry lists USB devices ever connected, recently opened documents and the programs set to start with Windows, a favourite hiding place for malware.",
+   "ar": "ويسرد السجل أجهزة USB التي وُصّلت يوماً والمستندات المفتوحة مؤخراً والبرامج المضبوطة للعمل مع بدء Windows وهي مخبأ مفضل للبرمجيات الخبيثة."},
+  {"en": "Security event 4688 records new processes, 7045 records a new service, and 1102 records that someone cleared the log.",
+   "ar": "ويسجّل الحدث الأمني 4688 العمليات الجديدة ويسجّل الحدث 7045 الخدمات الجديدة ويسجّل الحدث 1102 أن أحداً مسح السجل."}
+ ],
+ "steps": [
+  {"en": "Parse every shortcut in the Recent folders", "ar": "حلّل كل اختصار في مجلدات العناصر الأخيرة"},
+  {"en": "Check prefetch for unexpected programs", "ar": "افحص ملفات Prefetch بحثاً عن برامج غير متوقعة"},
+  {"en": "Review run keys and services", "ar": "راجع مفاتيح التشغيل التلقائي والخدمات"},
+  {"en": "Search the event logs for new services and cleared logs", "ar": "ابحث في سجلات الأحداث عن الخدمات الجديدة والسجلات الممسوحة"}
+ ],
+ "pitfalls": [
+  {"en": "Opening a suspect's registry hive with a live registry editor, which can change it.",
+   "ar": "فتح ملف سجل المشتبه به بمحرر سجل حي وهذا قد يغيّره."},
+  {"en": "Concluding nothing happened because the security log is empty, when the empty log is itself a sign of clearing.",
+   "ar": "استنتاج أن شيئاً لم يحدث لأن السجل الأمني فارغ بينما الفراغ نفسه علامة على المسح."}
+ ],
+ "kuwait": {"en": "Kuwait's national cybersecurity baseline raises the logging expected from government and critical bodies, which decides what Windows evidence will exist after an incident.",
+            "ar": "ترفع الضوابط الوطنية الأساسية للأمن السيبراني في الكويت مستوى التسجيل المتوقع من الجهات الحكومية والحيوية وهذا يحدد ما سيوجد من أدلة Windows بعد الحادثة."},
+ "law_refs": ["kw-ncsc-nbcc-2026", "sa-nca-ecc-2-2024"],
+ "tools": ["regripper", "chainsaw", "hayabusa", "eztools", "velociraptor", "yara", "capa"],
+ "terms": ["registry", "lnk-file", "prefetch", "event-log"],
+ "commands": ["qassas lnk qassas-case-01/evidence/Recent/Tender_Update.lnk", "qassas logs qassas-case-01/evidence/Logs/LAPTOP-FHD01_security.jsonl"],
+ "quiz": [
+  {"q": {"en": "Which Windows security event shows the log was cleared", "ar": "أي حدث أمني في Windows يدل على مسح السجل"},
+   "options": [{"en": "4624", "ar": "4624"}, {"en": "4688", "ar": "4688"}, {"en": "1102", "ar": "1102"}, {"en": "7045", "ar": "7045"}],
+   "answer": 2,
+   "why": {"en": "Event 1102 is written when the security log is cleared, and it names the account that did it.",
+           "ar": "يُكتب الحدث 1102 حين يُمسح السجل الأمني ويذكر الحساب الذي مسحه."}},
+  {"q": {"en": "The target file is deleted. Can its LNK shortcut still help", "ar": "حُذف الملف الهدف فهل يبقى اختصاره LNK مفيداً"},
+   "options": [{"en": "No, it is deleted too", "ar": "لا لأنه يُحذف معه"},
+               {"en": "Yes, it keeps the path, size and times", "ar": "نعم لأنه يحتفظ بالمسار والحجم والأوقات"},
+               {"en": "Only on Windows 7", "ar": "فقط في Windows 7"},
+               {"en": "Only if the file was on USB", "ar": "فقط إن كان الملف على USB"}],
+   "answer": 1,
+   "why": {"en": "Shortcuts outlive their targets, which is why they prove a file existed and was opened.",
+           "ar": "تبقى الاختصارات بعد زوال أهدافها لذا تثبت أن الملف كان موجوداً وأنه فُتح."}}
+ ]
+}

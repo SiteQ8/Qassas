@@ -1,0 +1,57 @@
+{
+ "id": "law", "n": 2, "image": "09-archive-ledgers", "lab": null, "hours": 2,
+ "title": {"en": "The law in Kuwait and the Gulf", "ar": "القانون في الكويت والخليج"},
+ "summary": {"en": "Which laws make digital evidence admissible, who may investigate, and which deadlines start the clock when an incident is found.",
+             "ar": "ما القوانين التي تجعل الدليل الرقمي مقبولاً ومن يحق له التحقيق وما المهل التي يبدأ حسابها حين تُكتشف الحادثة."},
+ "objectives": [
+  {"en": "Name the Kuwaiti laws that govern IT crimes and electronic evidence", "ar": "تسمية القوانين الكويتية التي تحكم جرائم تقنية المعلومات والدليل الإلكتروني"},
+  {"en": "Explain how a court weighs an expert report", "ar": "شرح طريقة وزن المحكمة لتقرير الخبير"},
+  {"en": "List breach reporting deadlines across the GCC", "ar": "ذكر مهل الإبلاغ عن الاختراق في دول الخليج"}
+ ],
+ "lesson": [
+  {"en": "Law No. 63 of 2015 defines Kuwait's IT crimes, and Law No. 20 of 2014 gives electronic records the same evidential force as paper when they meet its conditions.",
+   "ar": "يعرّف القانون رقم 63 لسنة 2015 جرائم تقنية المعلومات في الكويت ويمنح القانون رقم 20 لسنة 2014 السجلات الإلكترونية حجية الورق في الإثبات متى استوفت شروطه."},
+  {"en": "The criminal procedure code, Law No. 17 of 1960, has no articles written for computers, so searches of devices follow its general rules on search, seizure and experts.",
+   "ar": "ولا يتضمن قانون الإجراءات الجزائية وهو القانون رقم 17 لسنة 1960 مواد مكتوبة للحاسوب فيخضع تفتيش الأجهزة لقواعده العامة في التفتيش والضبط والخبرة."},
+  {"en": "Courts have the final word on an expert's findings, so a report must explain its method plainly enough that a judge can follow and test it.",
+   "ar": "وللمحكمة الكلمة الأخيرة في ما ينتهي إليه الخبير لذا يجب أن يشرح التقرير منهجه بوضوح يتيح للقاضي متابعته واختباره."},
+  {"en": "Across the Gulf, data protection laws add short reporting clocks, often 24 or 72 hours, so the first hours of an incident must also produce records.",
+   "ar": "وتضيف قوانين حماية البيانات في الخليج مهلاً قصيرة للإبلاغ تكون غالباً 24 أو 72 ساعة لذا يجب أن تنتج الساعات الأولى من الحادثة سجلات موثقة أيضاً."}
+ ],
+ "steps": [
+  {"en": "Confirm who has authority to collect the evidence", "ar": "تأكد ممن يملك صلاحية جمع الأدلة"},
+  {"en": "Record the legal basis for every search", "ar": "سجّل السند القانوني لكل تفتيش"},
+  {"en": "Start the notification clock at discovery", "ar": "ابدأ حساب مهلة الإبلاغ لحظة الاكتشاف"},
+  {"en": "Keep personal data you find to the minimum the case needs", "ar": "اقتصر من البيانات الشخصية على ما تحتاجه القضية"}
+ ],
+ "pitfalls": [
+  {"en": "Examining an employee's personal phone without consent or an order, which can make the evidence unusable and expose the company.",
+   "ar": "فحص الهاتف الشخصي للموظف دون موافقته أو دون أمر وهذا قد يجعل الدليل غير صالح ويعرّض الشركة للمساءلة."},
+  {"en": "Assuming a regulator's deadline starts when the investigation ends rather than when the breach was found.",
+   "ar": "افتراض أن مهلة الجهة الرقابية تبدأ عند انتهاء التحقيق لا عند اكتشاف الاختراق."}
+ ],
+ "kuwait": {"en": "Kuwait ratified the Arab Convention on Combating Information Technology Offences but is not a party to the Budapest Convention, which shapes how evidence moves across borders.",
+            "ar": "صادقت الكويت على الاتفاقية العربية لمكافحة جرائم تقنية المعلومات وليست طرفاً في اتفاقية بودابست وهذا يحدد طريقة انتقال الأدلة عبر الحدود."},
+ "law_refs": ["kw-law-63-2015", "kw-law-20-2014", "kw-law-17-1960", "kw-cassation-536-2003", "kw-citra-dppr-26-2024", "intl-arab-convention-2010"],
+ "tools": [],
+ "terms": ["public-prosecution", "breach-notification", "expert-report"],
+ "commands": ["qassas law --country KW", "qassas law --country SA"],
+ "quiz": [
+  {"q": {"en": "Which Kuwaiti law gives electronic records evidential force", "ar": "أي قانون كويتي يمنح السجلات الإلكترونية حجية في الإثبات"},
+   "options": [{"en": "Law No. 20 of 2014", "ar": "القانون رقم 20 لسنة 2014"},
+               {"en": "Law No. 16 of 1960", "ar": "القانون رقم 16 لسنة 1960"},
+               {"en": "Law No. 106 of 2013", "ar": "القانون رقم 106 لسنة 2013"},
+               {"en": "Law No. 9 of 2001", "ar": "القانون رقم 9 لسنة 2001"}],
+   "answer": 0,
+   "why": {"en": "The Electronic Transactions Law, Law No. 20 of 2014, treats electronic records like paper when they meet its conditions.",
+           "ar": "يعامل قانون المعاملات الإلكترونية وهو القانون رقم 20 لسنة 2014 السجلات الإلكترونية معاملة الورق متى استوفت شروطه."}},
+  {"q": {"en": "Who decides in the end whether an expert's findings hold", "ar": "من يقرر في النهاية إن كانت نتائج الخبير معتبرة"},
+   "options": [{"en": "The expert", "ar": "الخبير"},
+               {"en": "The company that hired the expert", "ar": "الشركة التي استعانت بالخبير"},
+               {"en": "The court", "ar": "المحكمة"},
+               {"en": "The regulator", "ar": "الجهة الرقابية"}],
+   "answer": 2,
+   "why": {"en": "Kuwaiti courts treat expert opinion as one element of proof and keep the final assessment for themselves.",
+           "ar": "تعدّ المحاكم الكويتية رأي الخبير عنصراً من عناصر الإثبات وتحتفظ لنفسها بالتقدير النهائي."}}
+ ]
+}

@@ -1,0 +1,54 @@
+{
+ "id": "logs", "n": 9, "image": "poster-06-timeline", "lab": null, "hours": 2,
+ "title": {"en": "Logs and logins", "ar": "السجلات وتسجيلات الدخول"},
+ "summary": {"en": "How to read authentication logs from Linux and Windows to find password guessing, stolen credentials and attempts to cover tracks.",
+             "ar": "كيف تقرأ سجلات المصادقة في Linux وWindows لتكشف تخمين كلمات المرور وبيانات الدخول المسروقة ومحاولات إخفاء الأثر."},
+ "objectives": [
+  {"en": "Parse SSH and Windows logon events", "ar": "تحليل أحداث دخول SSH وWindows"},
+  {"en": "Spot a success that follows a burst of failures", "ar": "رصد دخول ناجح يتلو سلسلة إخفاقات"},
+  {"en": "Handle log time zones correctly", "ar": "التعامل الصحيح مع المناطق الزمنية في السجلات"}
+ ],
+ "lesson": [
+  {"en": "Linux records SSH logins in auth.log, and Windows records logons as events 4624 for success and 4625 for failure, each with the source address.",
+   "ar": "يسجّل Linux تسجيلات دخول SSH في الملف auth.log ويسجّل Windows الدخول في الحدثين 4624 للنجاح و4625 للفشل مع عنوان المصدر في كل منهما."},
+  {"en": "Many failures from one address in minutes is guessing. A success from that same address right after is the moment that matters most.",
+   "ar": "والإخفاقات الكثيرة من عنوان واحد في دقائق تعني التخمين أما الدخول الناجح من العنوان نفسه بعدها مباشرة فهو اللحظة الأهم."},
+  {"en": "A success with the right password and no failures can still be an attacker using credentials stolen by phishing, so compare the source address with the user's usual places.",
+   "ar": "وقد يكون الدخول الناجح بكلمة المرور الصحيحة دون إخفاقات مهاجماً يستخدم بيانات سُرقت بالتصيد لذا قارن عنوان المصدر بالأماكن المعتادة للمستخدم."},
+  {"en": "Syslog lines carry no year and no zone, so confirm the server's time zone from its configuration before you convert anything to UTC.",
+   "ar": "ولا تحمل أسطر Syslog السنة ولا المنطقة الزمنية لذا تأكد من المنطقة الزمنية للخادم من إعداداته قبل تحويل أي وقت إلى UTC."}
+ ],
+ "steps": [
+  {"en": "Collect logs from every system involved", "ar": "اجمع السجلات من كل نظام له صلة"},
+  {"en": "Confirm each host's time zone and clock drift", "ar": "تأكد من المنطقة الزمنية لكل جهاز ومن انحراف ساعته"},
+  {"en": "Group failures by source address", "ar": "صنّف الإخفاقات حسب عنوان المصدر"},
+  {"en": "Flag successes from guessing addresses", "ar": "علّم الدخول الناجح من عناوين التخمين"}
+ ],
+ "pitfalls": [
+  {"en": "Assuming every log is in UTC, which misplaces Kuwaiti events by three hours.",
+   "ar": "افتراض أن كل السجلات بتوقيت UTC وهذا يزيح أحداث الكويت ثلاث ساعات."},
+  {"en": "Looking only at failures and missing the quiet success that came later.",
+   "ar": "النظر إلى الإخفاقات وحدها وتفويت الدخول الناجح الهادئ الذي جاء بعدها."}
+ ],
+ "kuwait": {"en": "Saudi Arabia's essential controls set minimum log retention and Kuwait's national baseline raises logging duties, and both decide how far back an investigation can see.",
+            "ar": "تحدد الضوابط الأساسية في السعودية حداً أدنى لحفظ السجلات وترفع الضوابط الوطنية في الكويت واجبات التسجيل وكلاهما يحدد المدى الذي يبلغه التحقيق في الماضي."},
+ "law_refs": ["sa-nca-ecc-2-2024", "kw-ncsc-nbcc-2026", "kw-law-63-2015"],
+ "tools": ["chainsaw", "hayabusa", "sigma", "timesketch"],
+ "terms": ["event-log", "brute-force", "utc"],
+ "commands": ["qassas logs qassas-case-01/evidence/Logs/srv-files_auth.log --year 2026"],
+ "quiz": [
+  {"q": {"en": "Which pattern deserves the most urgent attention", "ar": "أي نمط يستحق الاهتمام الأعجل"},
+   "options": [{"en": "One failed login at night", "ar": "دخول فاشل واحد ليلاً"},
+               {"en": "Many failures then a success from the same address", "ar": "إخفاقات كثيرة ثم دخول ناجح من العنوان نفسه"},
+               {"en": "A logoff", "ar": "تسجيل خروج"},
+               {"en": "A password change by IT", "ar": "تغيير كلمة مرور من فريق التقنية"}],
+   "answer": 1,
+   "why": {"en": "It suggests the guessing worked or the attacker switched to a stolen password.",
+           "ar": "يدل على أن التخمين نجح أو أن المهاجم انتقل إلى كلمة مرور مسروقة."}},
+  {"q": {"en": "An auth.log line reads Oct 4 09:27:03 on a server set to Kuwait time. What is that in UTC", "ar": "سطر في auth.log يقول Oct 4 09:27:03 على خادم مضبوط على توقيت الكويت فكم الوقت بالتوقيت العالمي"},
+   "options": [{"en": "06:27:03", "ar": "06:27:03"}, {"en": "12:27:03", "ar": "12:27:03"}, {"en": "09:27:03", "ar": "09:27:03"}, {"en": "03:27:03", "ar": "03:27:03"}],
+   "answer": 0,
+   "why": {"en": "Kuwait is UTC+03:00, so 09:27:03 in Kuwait is 06:27:03 UTC.",
+           "ar": "توقيت الكويت هو UTC+03:00 لذا تقابل الساعة 09:27:03 في الكويت الساعة 06:27:03 بالتوقيت العالمي."}}
+ ]
+}

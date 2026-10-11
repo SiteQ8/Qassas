@@ -1,0 +1,57 @@
+{
+ "id": "browser", "n": 12, "image": "poster-01-traces", "lab": null, "hours": 2,
+ "title": {"en": "Browsers and phishing", "ar": "المتصفحات والتصيد"},
+ "summary": {"en": "How browser history, downloads and searches show the path from a phishing link to a compromised machine.",
+             "ar": "كيف يُظهر سجل التصفح والتنزيلات وعمليات البحث الطريق من رابط التصيد إلى الجهاز المخترق."},
+ "objectives": [
+  {"en": "Read Chromium and Firefox history safely", "ar": "قراءة سجل Chromium وFirefox بأمان"},
+  {"en": "Tie a download to the page that led to it", "ar": "ربط التنزيل بالصفحة التي قادت إليه"},
+  {"en": "Recognise lookalike domains", "ar": "التعرف على النطاقات المشابهة"}
+ ],
+ "lesson": [
+  {"en": "Chromium browsers keep history in an SQLite file called History, with every URL, every visit and its time, plus downloads and search terms.",
+   "ar": "تحفظ متصفحات Chromium السجل في ملف SQLite اسمه History وفيه كل رابط وكل زيارة ووقتها إضافة إلى التنزيلات وكلمات البحث."},
+  {"en": "Always copy the database before opening it, because SQLite can write to a file just by opening it.",
+   "ar": "وانسخ قاعدة البيانات دائماً قبل فتحها لأن SQLite قد يكتب في الملف بمجرد فتحه."},
+  {"en": "Each download records the page the user was on and the referrer, which links the file on disk back to the link that was clicked.",
+   "ar": "ويسجّل كل تنزيل الصفحة التي كان المستخدم عليها والصفحة المحيلة فيربط الملف على القرص بالرابط الذي نُقر."},
+  {"en": "Phishing domains copy a trusted name with a small change, such as an extra word or a hyphen, so read each domain letter by letter.",
+   "ar": "وتنسخ نطاقات التصيد اسماً موثوقاً مع تغيير صغير ككلمة زائدة أو شرطة لذا اقرأ كل نطاق حرفاً حرفاً."}
+ ],
+ "steps": [
+  {"en": "Copy the history database and its journal", "ar": "انسخ قاعدة بيانات السجل وملف اليومية التابع لها"},
+  {"en": "List visits around the time of the incident", "ar": "اسرد الزيارات حول وقت الحادثة"},
+  {"en": "Match downloads with their referrer pages", "ar": "طابق التنزيلات مع صفحاتها المحيلة"},
+  {"en": "Compare every domain with the real one", "ar": "قارن كل نطاق بالنطاق الحقيقي"}
+ ],
+ "pitfalls": [
+  {"en": "Opening the live History file in a browser or viewer that updates it.",
+   "ar": "فتح ملف History الأصلي في متصفح أو عارض يحدّثه."},
+  {"en": "Reading WebKit times as Unix times, which puts events in the wrong century.",
+   "ar": "قراءة أوقات WebKit على أنها أوقات Unix وهذا يضع الأحداث في قرن آخر."}
+ ],
+ "kuwait": {"en": "Kuwaiti banks and ministries are frequent targets of lookalike domains, and online fraud is an offence under Law No. 63 of 2015.",
+            "ar": "كثيراً ما تُستهدف البنوك والوزارات الكويتية بالنطاقات المشابهة والاحتيال الإلكتروني جريمة بموجب القانون رقم 63 لسنة 2015."},
+ "law_refs": ["kw-law-63-2015", "ae-fdl-34-2021"],
+ "tools": ["hindsight", "unfurl", "cyberchef"],
+ "terms": ["browser-history", "phishing", "typosquatting", "sqlite"],
+ "commands": ["qassas browser qassas-case-01/evidence/Browser/History"],
+ "quiz": [
+  {"q": {"en": "Which domain is most likely a phishing copy of company.example", "ar": "أي نطاق هو الأرجح نسخة تصيد من company.example"},
+   "options": [{"en": "portal.company.example", "ar": "portal.company.example"},
+               {"en": "company-login.example", "ar": "company-login.example"},
+               {"en": "mail.company.example", "ar": "mail.company.example"},
+               {"en": "company.example", "ar": "company.example"}],
+   "answer": 1,
+   "why": {"en": "company-login.example is a separate domain anyone can register. The others are names under the real domain.",
+           "ar": "النطاق company-login.example نطاق منفصل يستطيع أي شخص تسجيله أما الأخرى فأسماء تحت النطاق الحقيقي."}},
+  {"q": {"en": "Why copy the History file before reading it", "ar": "لماذا تنسخ ملف History قبل قراءته"},
+   "options": [{"en": "It is too large to read directly", "ar": "لأنه أكبر من أن يُقرأ مباشرة"},
+               {"en": "SQLite may write to the file when it opens it", "ar": "لأن SQLite قد يكتب في الملف عند فتحه"},
+               {"en": "The browser locks it forever", "ar": "لأن المتصفح يقفله إلى الأبد"},
+               {"en": "It is encrypted", "ar": "لأنه مشفر"}],
+   "answer": 1,
+   "why": {"en": "Opening can replay a journal or update the file, which would change the evidence.",
+           "ar": "قد يعيد الفتح تطبيق ملف اليومية أو يحدّث الملف وهذا يغيّر الدليل."}}
+ ]
+}

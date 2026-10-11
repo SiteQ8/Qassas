@@ -1,0 +1,57 @@
+{
+ "id": "foundations", "n": 1, "image": "02-footprint-hex", "lab": null, "hours": 2,
+ "title": {"en": "Reading the trace", "ar": "قراءة الأثر"},
+ "summary": {"en": "What digital forensics is, how it serves incident response and the law, and the four rules every examiner works by.",
+             "ar": "ما التحليل الجنائي الرقمي وكيف يخدم الاستجابة للحوادث والقانون وما القواعد الأربع التي يعمل بها كل فاحص."},
+ "objectives": [
+  {"en": "Explain the forensic process from identification to presentation", "ar": "شرح العملية الجنائية من التحديد حتى العرض"},
+  {"en": "Apply Locard's principle to computers and phones", "ar": "تطبيق مبدأ لوكار على الحواسيب والهواتف"},
+  {"en": "Tell a forensic examination apart from an incident response", "ar": "التمييز بين الفحص الجنائي والاستجابة للحادثة"}
+ ],
+ "lesson": [
+  {"en": "A Kuwaiti tracker could read a single footprint and say who passed, how heavy their load was and how long ago they walked by. Digital forensics asks the same questions of a computer.",
+   "ar": "كان قصّاص الأثر الكويتي يقرأ أثر قدم واحد فيعرف من مرّ وكم كان حمله ومنذ متى عبر والتحليل الجنائي الرقمي يطرح الأسئلة نفسها على الحاسوب."},
+  {"en": "Locard's exchange principle says every contact leaves a trace. On a device, opening a file, plugging in a USB stick or visiting a site writes records in several places at once.",
+   "ar": "ينص مبدأ لوكار للتبادل على أن كل تماس يترك أثراً فعلى الجهاز يكتب فتح ملف أو توصيل ذاكرة USB أو زيارة موقع سجلات في أماكن عدة في وقت واحد."},
+  {"en": "The process has five stages: identify the evidence, preserve it unchanged, acquire a verified copy, analyse the copy, and present findings others can repeat.",
+   "ar": "وتمر العملية بخمس مراحل هي تحديد الأدلة ثم حفظها دون تغيير ثم الحصول على نسخة موثقة منها ثم تحليل النسخة ثم عرض النتائج بطريقة يستطيع غيرك تكرارها."},
+  {"en": "Incident response wants the attack stopped fast, while forensics wants every trace kept. A good team plans both so that containment does not destroy the evidence.",
+   "ar": "تريد الاستجابة للحوادث إيقاف الهجوم بسرعة بينما يريد التحليل الجنائي حفظ كل أثر لذا يخطط الفريق الجيد للأمرين معاً كي لا يتلف الاحتواء الأدلة."}
+ ],
+ "steps": [
+  {"en": "Work on copies, never on the original", "ar": "اعمل على النسخ ولا تعمل على الأصل أبداً"},
+  {"en": "Hash everything before and after you touch it", "ar": "احسب بصمة كل شيء قبل أن تلمسه وبعده"},
+  {"en": "Write down every action with its time", "ar": "دوّن كل إجراء مع وقته"},
+  {"en": "Report only what the evidence supports", "ar": "لا تذكر في التقرير إلا ما تدعمه الأدلة"}
+ ],
+ "pitfalls": [
+  {"en": "Starting analysis before the evidence is preserved, which can change timestamps and destroy deleted data.",
+   "ar": "البدء بالتحليل قبل حفظ الأدلة وهذا قد يغيّر الطوابع الزمنية ويتلف البيانات المحذوفة."},
+  {"en": "Deciding on the answer first and then looking only for evidence that fits it.",
+   "ar": "تقرير الجواب مسبقاً ثم البحث عن الأدلة التي توافقه وحدها."}
+ ],
+ "kuwait": {"en": "In Kuwait, Law No. 63 of 2015 gives the Public Prosecution sole power to investigate IT crimes, so a company's internal examination should be done in a way that can be handed over intact.",
+            "ar": "في الكويت يمنح القانون رقم 63 لسنة 2015 النيابة العامة وحدها سلطة التحقيق في جرائم تقنية المعلومات لذا يجب أن يجري الفحص الداخلي في الشركة بطريقة تسمح بتسليمه سليماً."},
+ "law_refs": ["kw-law-63-2015", "intl-iso-27037-2012"],
+ "tools": ["autopsy", "cyberchef"],
+ "terms": ["digital-forensics", "dfir", "digital-evidence", "locard", "qassas-al-athar"],
+ "commands": ["qassas glossary locard", "qassas lab make --out qassas-case-01"],
+ "quiz": [
+  {"q": {"en": "Why does an examiner work on a copy rather than the original", "ar": "لماذا يعمل الفاحص على نسخة بدلاً من الأصل"},
+   "options": [{"en": "Copies are faster to read", "ar": "لأن قراءة النسخ أسرع"},
+               {"en": "So the original stays unchanged and can be checked again", "ar": "ليبقى الأصل دون تغيير ويمكن فحصه مرة أخرى"},
+               {"en": "Because the law forbids opening devices", "ar": "لأن القانون يمنع فتح الأجهزة"},
+               {"en": "To save storage space", "ar": "لتوفير مساحة التخزين"}],
+   "answer": 1,
+   "why": {"en": "Any tool can change data it opens. Keeping the original untouched lets anyone verify the copy against it later.",
+           "ar": "قد تغيّر أي أداة البيانات التي تفتحها والإبقاء على الأصل سليماً يتيح لأي شخص التحقق من النسخة بمقارنتها به لاحقاً."}},
+  {"q": {"en": "What does Locard's principle mean on a computer", "ar": "ماذا يعني مبدأ لوكار على الحاسوب"},
+   "options": [{"en": "Deleted files cannot be recovered", "ar": "أن الملفات المحذوفة لا تُسترجع"},
+               {"en": "Only administrators leave traces", "ar": "أن المسؤولين وحدهم يتركون آثاراً"},
+               {"en": "Every action writes a trace somewhere", "ar": "أن كل فعل يكتب أثراً في مكان ما"},
+               {"en": "Logs are always complete", "ar": "أن السجلات كاملة دائماً"}],
+   "answer": 2,
+   "why": {"en": "Opening, copying or browsing updates logs, caches, databases and timestamps, which is what examiners read.",
+           "ar": "يحدّث الفتح والنسخ والتصفح السجلات والذاكرة المؤقتة وقواعد البيانات والطوابع الزمنية وهذا ما يقرؤه الفاحص."}}
+ ]
+}

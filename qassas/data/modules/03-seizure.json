@@ -1,0 +1,58 @@
+{
+ "id": "seizure", "n": 3, "image": "04-evidence-bag", "lab": null, "hours": 2,
+ "title": {"en": "At the scene", "ar": "في موقع الحادثة"},
+ "summary": {"en": "How to secure a scene, photograph it, decide what to collect first and seal each item so nobody can doubt it later.",
+             "ar": "كيف تؤمّن الموقع وتصوّره وتقرر ما تجمعه أولاً وتختم كل دليل بحيث لا يشكك فيه أحد لاحقاً."},
+ "objectives": [
+  {"en": "Apply the order of volatility", "ar": "تطبيق ترتيب التطاير"},
+  {"en": "Decide whether to power a device off or keep it running", "ar": "تقرير إطفاء الجهاز أو إبقائه يعمل"},
+  {"en": "Seal and label evidence correctly", "ar": "ختم الأدلة وتوسيمها بالشكل الصحيح"}
+ ],
+ "lesson": [
+  {"en": "The first responder's job is to stop the scene from changing: keep people away from the devices, photograph screens and cables, and note what is on and what is off.",
+   "ar": "مهمة المستجيب الأول أن يمنع الموقع من التغير فيبعد الناس عن الأجهزة ويصوّر الشاشات والكابلات ويدوّن ما يعمل وما هو مطفأ."},
+  {"en": "Collect in order of volatility. Memory and live network connections vanish at power off, so if a machine is running and the case needs them, capture them before anything else.",
+   "ar": "واجمع الأدلة حسب ترتيب التطاير لأن الذاكرة واتصالات الشبكة الحية تختفي عند الإطفاء فإن كان الجهاز يعمل واحتاجتها القضية فالتقطها قبل أي شيء آخر."},
+  {"en": "A running machine with full disk encryption may be unreadable once powered off, so check for encryption before you pull the plug.",
+   "ar": "وقد يصبح الجهاز المشفر بالكامل غير قابل للقراءة بعد إطفائه لذا تحقق من التشفير قبل فصل التيار."},
+  {"en": "Phones go into a Faraday bag at once so they cannot be wiped remotely, and every item is bagged, sealed with a numbered seal and logged.",
+   "ar": "ويوضع الهاتف في حقيبة فاراداي فوراً كي لا يُمسح عن بُعد ثم يُعبأ كل دليل ويُختم بختم مرقّم ويُسجَّل."}
+ ],
+ "steps": [
+  {"en": "Secure the area and record who is present", "ar": "أمّن المكان وسجّل الحاضرين"},
+  {"en": "Photograph the scene before touching anything", "ar": "صوّر الموقع قبل أن تلمس شيئاً"},
+  {"en": "Capture volatile data if the case needs it", "ar": "التقط البيانات المتطايرة إن احتاجتها القضية"},
+  {"en": "Isolate phones in a Faraday bag", "ar": "اعزل الهواتف في حقيبة فاراداي"},
+  {"en": "Seal each item and start its custody log", "ar": "اختم كل دليل وابدأ سجل حيازته"}
+ ],
+ "pitfalls": [
+  {"en": "Letting the IT team log in to look around before evidence is collected, which overwrites logs and timestamps.",
+   "ar": "السماح لفريق تقنية المعلومات بالدخول والتجول قبل جمع الأدلة وهذا يكتب فوق السجلات والطوابع الزمنية."},
+  {"en": "Shutting down a server normally, which runs cleanup tasks that destroy the very traces you need.",
+   "ar": "إطفاء الخادم إطفاءً عادياً لأن ذلك يشغّل مهام تنظيف تتلف الآثار التي تحتاجها."}
+ ],
+ "kuwait": {"en": "Kuwait's procedure code requires searches and seizures to be recorded, and the Court of Cassation applies those ordinary rules to computers and discs.",
+            "ar": "يوجب قانون الإجراءات الكويتي توثيق التفتيش والضبط وتطبق محكمة التمييز هذه القواعد العادية على الحواسيب والأقراص."},
+ "law_refs": ["kw-law-17-1960", "kw-cassation-24-2008", "intl-iso-27037-2012", "intl-swgde-best-practices"],
+ "tools": ["velociraptor", "avml", "winpmem"],
+ "terms": ["first-responder", "order-of-volatility", "seizure", "faraday-bag", "evidence-bag", "volatile-data"],
+ "commands": ["qassas glossary volatility"],
+ "quiz": [
+  {"q": {"en": "A running laptop has full disk encryption. What should you check before switching it off", "ar": "حاسوب يعمل وقرصه مشفر بالكامل فما الذي تتحقق منه قبل إطفائه"},
+   "options": [{"en": "The screen brightness", "ar": "سطوع الشاشة"},
+               {"en": "Whether you need memory or unlocked data first", "ar": "حاجتك إلى الذاكرة أو البيانات المفتوحة أولاً"},
+               {"en": "The battery level only", "ar": "مستوى البطارية فقط"},
+               {"en": "Nothing, always switch off at once", "ar": "لا شيء بل أطفئه فوراً دائماً"}],
+   "answer": 1,
+   "why": {"en": "Once powered off, the encrypted disk may stay locked and the memory is lost, so capture what you need while it is unlocked.",
+           "ar": "بعد الإطفاء قد يبقى القرص المشفر مقفلاً وتضيع الذاكرة لذا التقط ما تحتاجه وهو مفتوح."}},
+  {"q": {"en": "Why does a seized phone go into a Faraday bag", "ar": "لماذا يوضع الهاتف المضبوط في حقيبة فاراداي"},
+   "options": [{"en": "To keep it warm", "ar": "لإبقائه دافئاً"},
+               {"en": "To block remote wipes and new messages", "ar": "لحجب المسح عن بُعد والرسائل الجديدة"},
+               {"en": "To charge it", "ar": "لشحنه"},
+               {"en": "To unlock it", "ar": "لفك قفله"}],
+   "answer": 1,
+   "why": {"en": "The bag blocks radio signals, so nobody can wipe the phone remotely and new data cannot overwrite old data.",
+           "ar": "تحجب الحقيبة الإشارات اللاسلكية فلا يستطيع أحد مسح الهاتف عن بُعد ولا تكتب البيانات الجديدة فوق القديمة."}}
+ ]
+}

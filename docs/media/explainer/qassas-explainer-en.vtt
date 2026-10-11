@@ -1,0 +1,67 @@
+WEBVTT
+Kind: captions
+Language: en
+
+1
+00:00:00.000 --> 00:00:02.870
+Every action on a device leaves a trace.
+
+2
+00:00:02.920 --> 00:00:10.290
+A file opened, a message sent, a login at three in the morning: each one is written down somewhere.
+
+3
+00:00:10.340 --> 00:00:16.930
+Long before computers, Kuwait's trackers, the qassas al-athar, read footprints in the sand.
+
+4
+00:00:16.980 --> 00:00:22.470
+From a single print they could tell who had passed, how fast, and how long ago.
+
+5
+00:00:22.520 --> 00:00:24.670
+Digital forensics works the same way.
+
+6
+00:00:24.720 --> 00:00:30.270
+It begins with preservation: the examiner never works on the original.
+
+7
+00:00:30.320 --> 00:00:35.370
+A write blocker stops any change, and a bit for bit copy is taken.
+
+8
+00:00:35.420 --> 00:00:40.650
+Then comes verification. A cryptographic hash fingerprints the copy.
+
+9
+00:00:40.700 --> 00:00:46.670
+If a single bit changes, the fingerprint changes, and the evidence can no longer be trusted.
+
+10
+00:00:46.720 --> 00:00:53.330
+Every handover is written into the chain of custody: who held the evidence, when, and why.
+
+11
+00:00:53.380 --> 00:00:55.990
+Without it, nothing stands in court.
+
+12
+00:00:56.040 --> 00:00:58.170
+Then the reading begins.
+
+13
+00:00:58.220 --> 00:01:03.230
+File systems, memory, logs and network traffic are placed on one timeline,
+
+14
+00:01:03.280 --> 00:01:07.150
+until the story of what happened appears in order.
+
+15
+00:01:07.200 --> 00:01:12.890
+Finally, the report: clear, repeatable, and honest about its limits.
+
+16
+00:01:12.940 --> 00:01:18.028
+Qassas teaches this craft, step by step, in Arabic and English.

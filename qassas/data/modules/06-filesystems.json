@@ -1,0 +1,57 @@
+{
+ "id": "filesystems", "n": 6, "image": "07-filesystem-aerial", "lab": "signature", "hours": 3,
+ "title": {"en": "Files, signatures and carving", "ar": "الملفات والتواقيع والنحت"},
+ "summary": {"en": "How file systems store and forget files, how to spot a file whose name lies about its type, and how to carve deleted files back from raw bytes.",
+             "ar": "كيف تخزّن أنظمة الملفات الملفات وتنساها وكيف تكشف ملفاً يكذب اسمه بشأن نوعه وكيف تستعيد الملفات المحذوفة بالنحت من البايتات الخام."},
+ "objectives": [
+  {"en": "Identify a file by its signature", "ar": "تحديد نوع الملف من توقيعه"},
+  {"en": "Explain what deletion really removes", "ar": "شرح ما يزيله الحذف فعلاً"},
+  {"en": "Carve files from unallocated space", "ar": "نحت الملفات من المساحة غير المخصصة"}
+ ],
+ "lesson": [
+  {"en": "A file system keeps an index of names and the places their data lives, much like plots marked out in the sand with the owners' names in a ledger.",
+   "ar": "يحتفظ نظام الملفات بفهرس للأسماء ولمواضع بياناتها كأنها قطع أرض مخططة في الرمل وأسماء ملاكها في دفتر."},
+  {"en": "Deleting a file usually removes only its entry in the index and marks the space as free. The bytes stay until a new file is written over them.",
+   "ar": "ويزيل حذف الملف غالباً قيده في الفهرس فقط ويعلّم مساحته بأنها فارغة فتبقى البايتات حتى يُكتب فوقها ملف جديد."},
+  {"en": "Every format starts with fixed bytes called a signature. A file named invoice.jpg that starts with PK is a ZIP archive, not a photo.",
+   "ar": "وتبدأ كل صيغة ببايتات ثابتة تسمى التوقيع فالملف المسمى invoice.jpg الذي يبدأ بالحرفين PK هو أرشيف ZIP لا صورة."},
+  {"en": "Carving searches raw data for those signatures and the matching ends, and recovers files even when the index is gone.",
+   "ar": "ويبحث النحت في البيانات الخام عن هذه التواقيع وعن النهايات المقابلة لها فيسترجع الملفات حتى إن ضاع الفهرس."}
+ ],
+ "steps": [
+  {"en": "Identify every file by content, not name", "ar": "حدد نوع كل ملف من محتواه لا من اسمه"},
+  {"en": "List the files whose name and content disagree", "ar": "اجمع الملفات التي يختلف اسمها عن محتواها"},
+  {"en": "Carve unallocated space for known formats", "ar": "انحت المساحة غير المخصصة بحثاً عن الصيغ المعروفة"},
+  {"en": "Hash every carved file and note its offset", "ar": "احسب بصمة كل ملف منحوت ودوّن موضعه"}
+ ],
+ "pitfalls": [
+  {"en": "Trusting the extension, which anyone can change in a second.",
+   "ar": "الثقة بامتداد الملف الذي يستطيع أي شخص تغييره في ثانية."},
+  {"en": "Stopping a JPEG carve at the first end marker, which cuts the photo at its embedded thumbnail.",
+   "ar": "إيقاف نحت صورة JPEG عند أول علامة نهاية وهذا يقطع الصورة عند الصورة المصغرة المضمنة فيها."}
+ ],
+ "kuwait": {"en": "Hiding a document by renaming it is common in leak cases, and Law No. 63 of 2015 treats disclosure of data obtained through illegal access more severely.",
+            "ar": "إخفاء المستند بتغيير اسمه شائع في قضايا التسريب ويشدد القانون رقم 63 لسنة 2015 العقوبة على إفشاء البيانات التي تم الحصول عليها بالدخول غير المشروع."},
+ "law_refs": ["kw-law-63-2015"],
+ "tools": ["sleuthkit", "autopsy", "photorec", "bulk-extractor", "scalpel"],
+ "terms": ["file-system", "file-signature", "unallocated", "slack-space", "carving"],
+ "commands": ["qassas identify qassas-case-01/evidence", "qassas carve qassas-case-01/evidence/laptop.img carved"],
+ "quiz": [
+  {"q": {"en": "A file called report.pdf begins with the bytes FF D8 FF. What is it", "ar": "ملف اسمه report.pdf يبدأ بالبايتات FF D8 FF فما هو"},
+   "options": [{"en": "A PDF document", "ar": "مستند PDF"},
+               {"en": "A JPEG image", "ar": "صورة JPEG"},
+               {"en": "A ZIP archive", "ar": "أرشيف ZIP"},
+               {"en": "A Windows program", "ar": "برنامج Windows"}],
+   "answer": 1,
+   "why": {"en": "FF D8 FF is the JPEG signature. A real PDF starts with %PDF.",
+           "ar": "البايتات FF D8 FF هي توقيع صور JPEG أما ملف PDF الحقيقي فيبدأ بـ %PDF."}},
+  {"q": {"en": "Why can deleted files often be recovered", "ar": "لماذا يمكن غالباً استرجاع الملفات المحذوفة"},
+   "options": [{"en": "Deletion moves them to a hidden folder", "ar": "لأن الحذف ينقلها إلى مجلد مخفي"},
+               {"en": "The index entry goes but the bytes stay until overwritten", "ar": "لأن قيد الفهرس يزول وتبقى البايتات حتى يُكتب فوقها"},
+               {"en": "Windows keeps two copies of every file", "ar": "لأن Windows يحفظ نسختين من كل ملف"},
+               {"en": "They cannot be recovered", "ar": "لا يمكن استرجاعها"}],
+   "answer": 1,
+   "why": {"en": "The space is only marked free. Until something new is written there, the old content survives.",
+           "ar": "تُعلَّم المساحة بأنها فارغة فقط ويبقى المحتوى القديم حتى يُكتب فيها شيء جديد."}}
+ ]
+}

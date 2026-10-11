@@ -1,0 +1,57 @@
+{
+ "id": "memory", "n": 10, "image": "06-memory-motes", "lab": null, "hours": 3,
+ "title": {"en": "Memory forensics", "ar": "التحليل الجنائي للذاكرة"},
+ "summary": {"en": "Why memory holds evidence the disk never sees, how to capture it from a live machine and what to look for in the capture.",
+             "ar": "لماذا تحوي الذاكرة أدلة لا يراها القرص أبداً وكيف تلتقطها من جهاز يعمل وعمّ تبحث في الالتقاط."},
+ "objectives": [
+  {"en": "Capture memory from Windows and Linux", "ar": "التقاط الذاكرة من Windows وLinux"},
+  {"en": "List processes and network connections from a capture", "ar": "سرد العمليات واتصالات الشبكة من الالتقاط"},
+  {"en": "Recognise code injected into a process", "ar": "التعرف على شيفرة محقونة في عملية"}
+ ],
+ "lesson": [
+  {"en": "Some malware lives only in memory and never writes a file, and encryption keys, chat fragments and command lines often exist only there.",
+   "ar": "تعيش بعض البرمجيات الخبيثة في الذاكرة وحدها دون أن تكتب ملفاً وكثيراً ما توجد مفاتيح التشفير ومقاطع المحادثات وأسطر الأوامر هناك فقط."},
+  {"en": "Memory disappears like heat shimmer when the power goes, so it is captured first, with a small trusted tool run from external media.",
+   "ar": "وتختفي الذاكرة كسراب الحر حين ينقطع التيار لذا تُلتقط أولاً بأداة صغيرة موثوقة تعمل من وسيط خارجي."},
+  {"en": "Any capture tool changes a little memory itself, so record exactly which tool and version you ran and when.",
+   "ar": "وتغيّر أي أداة التقاط قليلاً من الذاكرة بنفسها لذا سجّل بدقة الأداة التي شغلتها وإصدارها ووقت تشغيلها."},
+  {"en": "Volatility reads the capture to list processes, their parents, open connections and loaded code, and flags memory that looks injected.",
+   "ar": "ويقرأ Volatility الالتقاط فيسرد العمليات وآباءها والاتصالات المفتوحة والشيفرة المحمّلة وينبّه إلى مناطق الذاكرة التي تبدو محقونة."}
+ ],
+ "steps": [
+  {"en": "Capture memory before you shut anything down", "ar": "التقط الذاكرة قبل أن تطفئ أي شيء"},
+  {"en": "Hash the capture and log the tool used", "ar": "احسب بصمة الالتقاط وسجّل الأداة المستخدمة"},
+  {"en": "List processes and compare parents with normal ones", "ar": "اسرد العمليات وقارن آباءها بالآباء المعتادين"},
+  {"en": "Match open connections to the network evidence", "ar": "طابق الاتصالات المفتوحة مع أدلة الشبكة"}
+ ],
+ "pitfalls": [
+  {"en": "Running a large tool from the suspect machine's own disk, which overwrites the free memory you wanted.",
+   "ar": "تشغيل أداة كبيرة من قرص الجهاز المشتبه به نفسه وهذا يكتب فوق الذاكرة الحرة التي تريدها."},
+  {"en": "Trusting the process list the live system shows, which a rootkit can hide entries from.",
+   "ar": "الثقة بقائمة العمليات التي يعرضها النظام الحي مع أن أداة التخفي قد تخفي منها عمليات."}
+ ],
+ "kuwait": {"en": "Kuwait's national center can direct response teams during major incidents, so agree in advance who captures memory and how it is handed over.",
+            "ar": "يستطيع المركز الوطني للأمن السيبراني في الكويت توجيه فرق الاستجابة في الحوادث الكبرى لذا اتفقوا مسبقاً على من يلتقط الذاكرة وكيف تُسلَّم."},
+ "law_refs": ["kw-ncsc-decree-37-2022", "intl-nist-sp800-86-101r1"],
+ "tools": ["volatility3", "avml", "winpmem", "lime"],
+ "terms": ["memory-forensics", "volatile-data", "order-of-volatility"],
+ "commands": [],
+ "quiz": [
+  {"q": {"en": "Why capture memory before pulling the plug", "ar": "لماذا تلتقط الذاكرة قبل فصل التيار"},
+   "options": [{"en": "It makes the disk image smaller", "ar": "لأن ذلك يصغّر صورة القرص"},
+               {"en": "Memory is lost at power off and may hold keys and fileless malware", "ar": "لأن الذاكرة تضيع عند الإطفاء وقد تحوي مفاتيح وبرمجيات بلا ملفات"},
+               {"en": "The law requires it in every case", "ar": "لأن القانون يوجبه في كل قضية"},
+               {"en": "It is faster", "ar": "لأنه أسرع"}],
+   "answer": 1,
+   "why": {"en": "Memory is the most volatile evidence, and some of it exists nowhere else.",
+           "ar": "الذاكرة أكثر الأدلة تطايراً وبعض ما فيها لا يوجد في أي مكان آخر."}},
+  {"q": {"en": "What must you record when you capture memory", "ar": "ما الذي يجب تسجيله عند التقاط الذاكرة"},
+   "options": [{"en": "Only the file name", "ar": "اسم الملف فقط"},
+               {"en": "The tool, its version, the time and the hash of the capture", "ar": "الأداة وإصدارها والوقت وبصمة الالتقاط"},
+               {"en": "Nothing, memory is not evidence", "ar": "لا شيء لأن الذاكرة ليست دليلاً"},
+               {"en": "The screen resolution", "ar": "دقة الشاشة"}],
+   "answer": 1,
+   "why": {"en": "The tool changes a little memory, so a court needs to know exactly what ran and when.",
+           "ar": "تغيّر الأداة قليلاً من الذاكرة لذا تحتاج المحكمة إلى معرفة ما شُغّل بالضبط ومتى."}}
+ ]
+}

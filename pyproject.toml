@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "qassas"
+version = "1.0.0"
+description = "Qassas: open digital forensics education for Kuwait and the Gulf. A zero dependency toolkit, synthetic practice evidence and an MCP server"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Ali AlEnezi" }]
+keywords = ["digital-forensics", "dfir", "incident-response", "education", "kuwait", "gcc", "arabic", "chain-of-custody",
+            "file-carving", "exif", "pcap", "timeline", "mcp", "mcp-server"]
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Environment :: Console",
+  "Intended Audience :: Education",
+  "Intended Audience :: Information Technology",
+  "License :: OSI Approved :: MIT License",
+  "Natural Language :: Arabic",
+  "Natural Language :: English",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Topic :: Education",
+  "Topic :: Security",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://qassas.3li.info"
+Repository = "https://github.com/SiteQ8/Qassas"
+Issues = "https://github.com/SiteQ8/Qassas/issues"
+
+[project.scripts]
+qassas = "qassas.cli:main"
+
+[tool.setuptools]
+packages = ["qassas"]
+
+[tool.setuptools.package-data]
+qassas = ["data/*.json", "data/modules/*.json"]

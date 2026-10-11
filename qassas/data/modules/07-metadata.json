@@ -1,0 +1,57 @@
+{
+ "id": "metadata", "n": 7, "image": "poster-02-tracker", "lab": "exif", "hours": 2,
+ "title": {"en": "Metadata: where and when", "ar": "البيانات الوصفية أين ومتى"},
+ "summary": {"en": "How photos, PDFs and Office files record their author, software, time and place, and how to read that without trusting it blindly.",
+             "ar": "كيف تسجّل الصور وملفات PDF وملفات Office مؤلفها وبرنامجها ووقتها ومكانها وكيف تقرأ ذلك دون أن تثق به ثقة عمياء."},
+ "objectives": [
+  {"en": "Read EXIF time and GPS from a photo", "ar": "قراءة وقت الصورة وإحداثياتها من بيانات EXIF"},
+  {"en": "Find revisions inside a PDF", "ar": "اكتشاف النسخ المحفوظة داخل ملف PDF"},
+  {"en": "Corroborate metadata with a second source", "ar": "تعزيز البيانات الوصفية بمصدر ثانٍ"}
+ ],
+ "lesson": [
+  {"en": "A phone photo usually carries the device model, the time it was taken with its zone offset, and GPS coordinates accurate to a few metres.",
+   "ar": "تحمل صورة الهاتف عادةً طراز الجهاز ووقت الالتقاط مع فرق المنطقة الزمنية وإحداثيات GPS دقيقة إلى بضعة أمتار."},
+  {"en": "Qassas turns coordinates into the nearest Kuwaiti area, such as Salmiya or Jahra, so a student can see at once whether the place fits the story.",
+   "ar": "ويحوّل قصّاص الإحداثيات إلى أقرب منطقة كويتية مثل السالمية أو الجهراء ليرى الطالب فوراً إن كان المكان يوافق الرواية."},
+  {"en": "PDFs record an author, the software used and creation and modification dates. Each incremental save adds another end of file marker, which reveals later edits.",
+   "ar": "وتسجّل ملفات PDF المؤلف والبرنامج المستخدم وتاريخي الإنشاء والتعديل ويضيف كل حفظ تراكمي علامة نهاية ملف جديدة تكشف التعديلات اللاحقة."},
+  {"en": "Metadata is easy to edit, so it is a lead, not proof. Confirm it with something independent, such as a log entry or a network record.",
+   "ar": "والبيانات الوصفية سهلة التعديل فهي خيط يقود إلى الدليل لا دليل قاطع لذا أكدها بمصدر مستقل كقيد في سجل أو أثر في الشبكة."}
+ ],
+ "steps": [
+  {"en": "Extract metadata from every photo and document", "ar": "استخرج البيانات الوصفية من كل صورة ومستند"},
+  {"en": "Convert every time to UTC with its offset", "ar": "حوّل كل وقت إلى UTC مع فرقه الزمني"},
+  {"en": "Place GPS fixes on a map", "ar": "ضع إحداثيات GPS على الخريطة"},
+  {"en": "Look for a second source for each key fact", "ar": "ابحث عن مصدر ثانٍ لكل واقعة رئيسية"}
+ ],
+ "pitfalls": [
+  {"en": "Reading an EXIF time without its offset and assuming UTC, which shifts a Kuwaiti photo by three hours.",
+   "ar": "قراءة وقت EXIF دون فرقه الزمني وافتراض أنه UTC وهذا يزيح وقت صورة كويتية ثلاث ساعات."},
+  {"en": "Treating the PDF author field as proof of who wrote the document.",
+   "ar": "عدّ حقل المؤلف في ملف PDF دليلاً على كاتب المستند."}
+ ],
+ "kuwait": {"en": "Law No. 9 of 2001 and Law No. 63 of 2015 make secret photography and its misuse a crime, so photo metadata often sits at the centre of Kuwaiti cases.",
+            "ar": "يجرّم القانون رقم 9 لسنة 2001 والقانون رقم 63 لسنة 2015 التصوير خلسة وإساءة استخدامه لذا كثيراً ما تكون البيانات الوصفية للصور في قلب القضايا الكويتية."},
+ "law_refs": ["kw-law-9-2001", "kw-law-63-2015"],
+ "tools": ["exiftool", "cyberchef"],
+ "terms": ["metadata", "exif", "timestamp"],
+ "commands": ["qassas meta qassas-case-01/evidence/Pictures/IMG_2038.jpg", "qassas meta qassas-case-01/evidence/Documents/Tender_2026_Final.pdf"],
+ "quiz": [
+  {"q": {"en": "A photo says 19:12 with offset +03:00. What is the time in UTC", "ar": "تقول صورة إن وقتها 19:12 بفرق +03:00 فما الوقت بالتوقيت العالمي"},
+   "options": [{"en": "22:12", "ar": "22:12"},
+               {"en": "16:12", "ar": "16:12"},
+               {"en": "19:12", "ar": "19:12"},
+               {"en": "13:12", "ar": "13:12"}],
+   "answer": 1,
+   "why": {"en": "Kuwait is three hours ahead of UTC, so subtract 3 hours from 19:12.",
+           "ar": "تسبق الكويت التوقيت العالمي بثلاث ساعات لذا اطرح 3 ساعات من 19:12."}},
+  {"q": {"en": "What does a second end of file marker in a PDF suggest", "ar": "علامَ تدل علامة نهاية ملف ثانية في ملف PDF"},
+   "options": [{"en": "The file is corrupt", "ar": "على أن الملف تالف"},
+               {"en": "The file was saved again after it was first written", "ar": "على أن الملف حُفظ مرة أخرى بعد كتابته أول مرة"},
+               {"en": "The file is encrypted", "ar": "على أن الملف مشفر"},
+               {"en": "The file has two authors", "ar": "على أن للملف مؤلفين"}],
+   "answer": 1,
+   "why": {"en": "An incremental save appends changes and a new end marker, so earlier versions can sometimes be recovered too.",
+           "ar": "يضيف الحفظ التراكمي التغييرات وعلامة نهاية جديدة لذا يمكن أحياناً استرجاع النسخ الأقدم أيضاً."}}
+ ]
+}

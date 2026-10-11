@@ -1,0 +1,57 @@
+{
+ "id": "mobile", "n": 13, "image": "11-mobile-bench", "lab": null, "hours": 3,
+ "title": {"en": "Mobile devices", "ar": "الأجهزة المحمولة"},
+ "summary": {"en": "How phones are isolated, which kinds of extraction exist, and where chats, locations and app data live on Android and iOS.",
+             "ar": "كيف تُعزل الهواتف وما أنواع الاستخراج وأين توجد المحادثات والمواقع وبيانات التطبيقات في Android وiOS."},
+ "objectives": [
+  {"en": "Isolate a phone without losing data", "ar": "عزل الهاتف دون فقدان بياناته"},
+  {"en": "Choose between logical and full file system extraction", "ar": "الاختيار بين الاستخراج المنطقي والاستخراج الكامل لنظام الملفات"},
+  {"en": "Find chat and location databases", "ar": "العثور على قواعد بيانات المحادثات والمواقع"}
+ ],
+ "lesson": [
+  {"en": "A seized phone goes into a Faraday bag at once and stays charged, because a reboot can lock data away behind encryption.",
+   "ar": "يوضع الهاتف المضبوط في حقيبة فاراداي فوراً ويبقى مشحوناً لأن إعادة التشغيل قد تقفل البيانات خلف التشفير."},
+  {"en": "A logical extraction collects what a backup offers. A full file system extraction reaches app databases, deleted records and system logs.",
+   "ar": "ويجمع الاستخراج المنطقي ما تتيحه النسخة الاحتياطية بينما يصل الاستخراج الكامل لنظام الملفات إلى قواعد بيانات التطبيقات والسجلات المحذوفة وسجلات النظام."},
+  {"en": "Most chats, call logs and locations are stored in SQLite databases, and deleted rows can often be recovered from their free pages.",
+   "ar": "وتُحفظ معظم المحادثات وسجلات المكالمات والمواقع في قواعد بيانات SQLite وكثيراً ما تُسترجع الصفوف المحذوفة من صفحاتها الحرة."},
+  {"en": "Open source parsers such as ALEAPP and iLEAPP turn an extraction into readable reports of chats, locations, accounts and app usage.",
+   "ar": "وتحوّل أدوات التحليل مفتوحة المصدر مثل ALEAPP وiLEAPP الاستخراج إلى تقارير مقروءة للمحادثات والمواقع والحسابات واستخدام التطبيقات."}
+ ],
+ "steps": [
+  {"en": "Isolate the phone and keep it powered", "ar": "اعزل الهاتف وأبقه مشحوناً"},
+  {"en": "Record the screen state and any lock", "ar": "سجّل حالة الشاشة وأي قفل"},
+  {"en": "Extract with a documented and tested tool", "ar": "استخرج البيانات بأداة موثقة ومختبرة"},
+  {"en": "Hash the extraction and parse it", "ar": "احسب بصمة الاستخراج ثم حلّله"}
+ ],
+ "pitfalls": [
+  {"en": "Browsing the phone by hand to look for messages, which changes read status and timestamps.",
+   "ar": "تصفح الهاتف يدوياً للبحث عن الرسائل وهذا يغيّر حالة القراءة والطوابع الزمنية."},
+  {"en": "Letting the battery die, which can make an unlocked phone unrecoverable.",
+   "ar": "ترك البطارية تنفد وهذا قد يجعل الهاتف المفتوح غير قابل للاسترجاع."}
+ ],
+ "kuwait": {"en": "Phones carry personal data of people outside the case, so keep only what the investigation needs, as the data protection rules across the Gulf expect.",
+            "ar": "تحمل الهواتف بيانات شخصية لأشخاص خارج القضية لذا احتفظ بما يحتاجه التحقيق فقط كما تتوقع قواعد حماية البيانات في الخليج."},
+ "law_refs": ["kw-citra-dppr-26-2024", "intl-nist-sp800-86-101r1", "qa-law-14-2014"],
+ "tools": ["aleapp", "ileapp", "mvt"],
+ "terms": ["faraday-bag", "mobile-extraction", "sqlite"],
+ "commands": [],
+ "quiz": [
+  {"q": {"en": "Which extraction reaches deleted chat records", "ar": "أي نوع استخراج يصل إلى سجلات المحادثات المحذوفة"},
+   "options": [{"en": "A screenshot", "ar": "لقطة شاشة"},
+               {"en": "A logical extraction", "ar": "الاستخراج المنطقي"},
+               {"en": "A full file system extraction", "ar": "الاستخراج الكامل لنظام الملفات"},
+               {"en": "A SIM card copy", "ar": "نسخ بطاقة SIM"}],
+   "answer": 2,
+   "why": {"en": "Only the full file system includes the app databases, whose free pages may still hold deleted rows.",
+           "ar": "الاستخراج الكامل وحده يشمل قواعد بيانات التطبيقات التي قد تحفظ صفحاتها الحرة صفوفاً محذوفة."}},
+  {"q": {"en": "Why keep a seized phone charged", "ar": "لماذا تُبقي الهاتف المضبوط مشحوناً"},
+   "options": [{"en": "To receive new messages", "ar": "لاستقبال رسائل جديدة"},
+               {"en": "A restart can lock data behind encryption", "ar": "لأن إعادة التشغيل قد تقفل البيانات خلف التشفير"},
+               {"en": "Phones lose all data at zero battery", "ar": "لأن الهواتف تفقد كل بياناتها عند نفاد البطارية"},
+               {"en": "It is not important", "ar": "ليس مهماً"}],
+   "answer": 1,
+   "why": {"en": "After a restart many phones hold keys only after the passcode is entered again, so data that was reachable may no longer be.",
+           "ar": "بعد إعادة التشغيل لا تتاح المفاتيح في كثير من الهواتف إلا بعد إدخال رمز المرور مجدداً فقد تصبح البيانات المتاحة غير متاحة."}}
+ ]
+}

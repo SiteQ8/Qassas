@@ -1,0 +1,58 @@
+{
+ "id": "acquisition", "n": 4, "image": "03-write-blocker", "lab": "hash", "hours": 3,
+ "title": {"en": "Imaging and hashing", "ar": "التصوير الجنائي والبصمات"},
+ "summary": {"en": "How to make a bit for bit copy through a write blocker and prove with hashes that the copy equals the source.",
+             "ar": "كيف تأخذ نسخة مطابقة بتّاً ببتّ عبر مانع الكتابة وتثبت بالبصمات أن النسخة تساوي المصدر."},
+ "objectives": [
+  {"en": "Image a drive through a write blocker", "ar": "تصوير القرص عبر مانع الكتابة"},
+  {"en": "Compute and compare MD5, SHA-1 and SHA-256", "ar": "حساب بصمات MD5 وSHA-1 وSHA-256 ومقارنتها"},
+  {"en": "Write and verify an evidence manifest", "ar": "كتابة سجل بصمات الأدلة والتحقق منه"}
+ ],
+ "lesson": [
+  {"en": "A write blocker sits between the drive and the examiner's computer and lets reads through but stops every write, so even a careless click cannot change the evidence.",
+   "ar": "يقع مانع الكتابة بين القرص وحاسوب الفاحص فيمرر القراءة ويوقف كل كتابة فلا تستطيع حتى نقرة خاطئة أن تغيّر الدليل."},
+  {"en": "The image copies every sector, including deleted files and unallocated space, which a normal file copy would miss.",
+   "ar": "وتنسخ الصورة الجنائية كل قطاع بما فيها الملفات المحذوفة والمساحة غير المخصصة التي يفوّتها النسخ العادي."},
+  {"en": "A hash is a fingerprint of the data. If one bit changes, SHA-256 changes completely, so equal hashes of source and image prove they are identical.",
+   "ar": "والبصمة تشبه بصمة الإصبع للبيانات فإن تغيّر بتّ واحد تغيّرت بصمة SHA-256 كلياً لذا يثبت تساوي بصمتي المصدر والصورة أنهما متطابقتان."},
+  {"en": "Hash at acquisition, write the values in the custody log and the manifest, and hash again before each analysis so anyone can see nothing changed in between.",
+   "ar": "واحسب البصمة عند الحصول على الصورة واكتبها في سجل الحيازة وسجل البصمات ثم احسبها مرة أخرى قبل كل تحليل ليرى الجميع أن شيئاً لم يتغير بينهما."}
+ ],
+ "steps": [
+  {"en": "Connect the source through a write blocker", "ar": "صِل المصدر عبر مانع الكتابة"},
+  {"en": "Hash the source", "ar": "احسب بصمة المصدر"},
+  {"en": "Write the image to clean storage", "ar": "اكتب الصورة على وسيط تخزين نظيف"},
+  {"en": "Hash the image and compare", "ar": "احسب بصمة الصورة وقارنها"},
+  {"en": "Record both values in the custody log and the manifest", "ar": "سجّل القيمتين في سجل الحيازة وسجل البصمات"}
+ ],
+ "pitfalls": [
+  {"en": "Relying on MD5 alone, which can be forged with collisions, instead of recording SHA-256 as well.",
+   "ar": "الاعتماد على MD5 وحدها مع إمكان تزويرها بالتصادمات بدلاً من تسجيل SHA-256 معها."},
+  {"en": "Hashing only the image and not the source, which proves nothing about the copy.",
+   "ar": "حساب بصمة الصورة وحدها دون المصدر وهذا لا يثبت شيئاً عن صحة النسخة."}
+ ],
+ "kuwait": {"en": "The Central Bank of Kuwait's resilience framework asks regulated institutions for hashing and logging of forensic work, so these steps are an expectation in the financial sector.",
+            "ar": "يطلب إطار المرونة الصادر عن بنك الكويت المركزي من المؤسسات الخاضعة لرقابته حساب البصمات وتسجيل أعمال الفحص لذا تُعد هذه الخطوات متطلباً في القطاع المالي."},
+ "law_refs": ["kw-cbk-corf-2025", "intl-iso-27037-2012", "intl-swgde-best-practices"],
+ "tools": ["guymager", "libewf", "sleuthkit"],
+ "terms": ["write-blocker", "forensic-image", "raw-image", "e01", "hash", "sha256", "verification", "manifest"],
+ "commands": ["qassas hash qassas-case-01/evidence/laptop.img", "qassas manifest verify qassas-case-01/manifest.json --root qassas-case-01/evidence"],
+ "quiz": [
+  {"q": {"en": "One bit of a 2 GB image changes. What happens to its SHA-256", "ar": "تغيّر بتّ واحد في صورة حجمها 2 GB فماذا يحدث لبصمة SHA-256"},
+   "options": [{"en": "It stays the same", "ar": "تبقى كما هي"},
+               {"en": "Its last character changes", "ar": "يتغير آخر حرف فيها"},
+               {"en": "It changes completely", "ar": "تتغير كلياً"},
+               {"en": "It becomes shorter", "ar": "تصبح أقصر"}],
+   "answer": 2,
+   "why": {"en": "Good hash functions spread any change across the whole value, which is why a single altered bit is obvious.",
+           "ar": "توزّع دوال التجزئة الجيدة أي تغيير على القيمة كلها لذا يظهر البتّ الواحد المعدّل بوضوح."}},
+  {"q": {"en": "What does a write blocker do", "ar": "ما وظيفة مانع الكتابة"},
+   "options": [{"en": "Encrypts the drive", "ar": "يشفر القرص"},
+               {"en": "Allows reads and stops every write", "ar": "يسمح بالقراءة ويوقف كل كتابة"},
+               {"en": "Speeds up copying", "ar": "يسرّع النسخ"},
+               {"en": "Deletes hidden files", "ar": "يحذف الملفات المخفية"}],
+   "answer": 1,
+   "why": {"en": "It protects the original from any change, including the small writes operating systems make on their own.",
+           "ar": "يحمي الأصل من أي تغيير بما فيه الكتابات الصغيرة التي تجريها أنظمة التشغيل من تلقاء نفسها."}}
+ ]
+}
