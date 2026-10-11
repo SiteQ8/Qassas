@@ -1,0 +1,30 @@
+name: checks
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python: ["3.9", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Preflight without the network
+        run: python scripts/preflight.py --offline
+      - name: The practice case is reproducible
+        run: |
+          python -m qassas lab make --out /tmp/case
+          python -m qassas manifest verify /tmp/case/manifest.json --root /tmp/case/evidence

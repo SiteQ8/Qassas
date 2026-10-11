@@ -1,0 +1,48 @@
+name: release
+
+# Tags and publishes the version in qassas/__init__.py the first time it reaches main.
+# The notes come from the matching section of CHANGELOG.md.
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Read the version
+        id: v
+        run: |
+          v=$(python3 -c "import qassas; print(qassas.__version__)")
+          echo "version=$v" >> "$GITHUB_OUTPUT"
+          if git rev-parse -q --verify "refs/tags/v$v" >/dev/null; then echo "exists=yes" >> "$GITHUB_OUTPUT"; else echo "exists=no" >> "$GITHUB_OUTPUT"; fi
+      - name: Write the notes
+        if: steps.v.outputs.exists == 'no'
+        run: |
+          python3 - "${{ steps.v.outputs.version }}" > notes.md <<'PY'
+          import re, sys
+          v = sys.argv[1]
+          text = open("CHANGELOG.md", encoding="utf-8").read()
+          m = re.search(r"^## " + re.escape(v) + r" .*?\n(.*?)(?=^## |\Z)", text, re.S | re.M)
+          print((m.group(1) if m else "").strip())
+          print()
+          print("Website: https://qassas.3li.info")
+          print()
+          print("The attached qassas-case-01.zip is the practice case. It holds the same files `qassas lab make` writes.")
+          PY
+      - name: Publish
+        if: steps.v.outputs.exists == 'no'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          v="${{ steps.v.outputs.version }}"
+          cp docs/labs/case-01.zip qassas-case-01.zip
+          gh release create "v$v" qassas-case-01.zip --target "$GITHUB_SHA" --title "Qassas $v" --notes-file notes.md
