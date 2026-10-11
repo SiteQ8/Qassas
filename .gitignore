@@ -5,8 +5,8 @@ build/
 dist/
 .venv/
 node_modules/
-qassas-case-01/
-carved/
-report*.md
-answers.json
+/qassas-case-01/
+/carved/
+/report*.md
+/answers.json
 .DS_Store
